@@ -1,5 +1,15 @@
 function buildEmail(section) {
 
+  var format_string = "";
+  integration = docText(section);
+  // build template for emails
+  format_string += "<em>" + integration['title'] + "</em";
+  format_string += "</br></br>" + integration['body'] + "</br>";
+  format_string += "Documentation: <a href='" + integration['link'] + "'>" + integration['link'] + "</a></br>";
+  if (integration['img'] != "")
+    format_string += "Network Diagram: <img src='" + integration['img'] + "'></br>";
+
+  return format_string;
 }
 
 function signup() {
