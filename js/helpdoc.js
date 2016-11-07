@@ -1,16 +1,16 @@
-def buildEmail(section) {
-  finalHTML = signup();
+function buildEmail(section) {
 
 }
 
-def signup() {
+function signup() {
   return '<em>Step 1:</em>Signup for a Duo Security Account: <a href="https://signup.duo.com">https://signup.duo.com</a> \
    <em>Step 2:</em>Decide which enrollment option(s) best meet your needs: <a href ="https://www.duo.com/docs/enrolling_users">https://www.duo.com/docs/enrolling_users</a> \
    <em>Step 3:</em> Setup your Applications';
 }
 
-def docText(integration) {
+function docText(integration) {
   // get entry from masterlist of integration information
+  var text = {};
   switch(integration) {
 
     // Enrollment Options Section
@@ -60,7 +60,7 @@ def docText(integration) {
       return text;
     case 'pulseconnet':
       text['title'] = "Pulse Connect Secure SSL VPN";
-      text['body']  = "Duo integrates with your Pulse Secure Connect Secure SSL VPN to add two-factor authentication to any VPN login, complete with inline self-service enrollment and authentication prompt. See our alternate instructions if you'd like to control the "failmode" (how the system will act if network communication with Duo is interrupted) or integrate Duo into a single Connect Secure sign-in URL with multiple authentication realms.";
+      text['body']  = "Duo integrates with your Pulse Secure Connect Secure SSL VPN to add two-factor authentication to any VPN login, complete with inline self-service enrollment and authentication prompt. See our alternate instructions if you'd like to control the \"failmode\" (how the system will act if network communication with Duo is interrupted) or integrate Duo into a single Connect Secure sign-in URL with multiple authentication realms.";
       text['link']  = "https://duo.com/docs/pulseconnect";
       text['img']   = "/img/pulse-network-diagram.png";
       return text;
@@ -174,39 +174,200 @@ def docText(integration) {
       text['link']  = "https://duo.com/docs/adfs-30";
       text['img']   = "/img/adfs_network_diagram.png";
       return text;
-    case 'samosas':
+    case 'rds':
+      text['title'] = "Duo Authentication for Microsoft Remote Desktop Services";
+      text['body']  = "Duo integrates with Remote Desktop Web Access (formerly Terminal Services Web Access or TS Web Access) or Remote Desktop Gateway (formerly Terminal Services Gateway or TS Gateway) to add two-factor authentication to RD Web and RD Gateway logons. Duo Authentication v2.2.0 for RD Web and RD Gateway supports Windows Server 2008 R2, 2012, and 2012 R2. If you want to enforce two-factor authentication for all your clients, you should ensure that they must connect through RD Web Access and RD Gateway. If users can establish a direct connection on port 3389 to your RD Connection Broker and/or Session Host(s), then they may be able to bypass two­-factor authentication.";
+      text['link']  = "https://duo.com/docs/rds";
+      text['img']   = "/img/RDWeb-architecture.png";
+      return text;
+    case 'tmg':
+      text['title'] = "Microsoft TMG";
+      text['body']  = "Duo integrates with your Microsoft TMG Server to add two-factor authentication to any published web server or SSL VPN Connections. To integrate Duo with your Microsoft TMG server, you will need to install a local proxy service on a machine within your network. Before proceeding, you should locate (or set up) a system on which you will install the Duo Authentication Proxy. The proxy supports Windows and Linux systems (in particular, we recommend Windows Server 2012 R2 or later, Red Hat Enterprise Linux 6 or later, CentOS 6 or later, or Debian 6 or later). This Duo proxy server also acts as a RADIUS server — there's no need to deploy a separate RADIUS server to use Duo.";
+      text['link']  = "https://duo.com/docs/tmg";
+      text['img']   = "/img/tmg_network_diagram.png";
+      return text;
+    case 'uag':
+      text['title'] = "Microsoft Forefront Unified Access Gateway (UAG)";
+      text['body']  = "Duo integrates with your Microsoft UAG Gateway to add two-factor authentication to portal logins. To integrate Duo with your Microsoft UAG server, you will need to install a local proxy service on a machine within your network. Before proceeding, you should locate (or set up) a system on which you will install the Duo Authentication Proxy. The proxy supports Windows and Linux systems (in particular, we recommend Windows Server 2012 R2 or later, Red Hat Enterprise Linux 6 or later, CentOS 6 or later, or Debian 6 or later). This Duo proxy server also acts as a RADIUS server — there's no need to deploy a separate RADIUS server to use Duo.";
+      text['link']  = "https://duo.com/docs/uag";
+      text['img']   = "/img/uag_network_diagram.png";
+      return text;
+    case 'rras':
+      text['title'] = "Microsoft RRAS";
+      text['body']  = "Duo integrates with your Microsoft Routing and Remote Access Server (RRAS) to add two-factor authentication to VPN Connections. To integrate Duo with your Microsoft RRAS server, you will need to install a local proxy service on a machine within your network. Before proceeding, you should locate (or set up) a system on which you will install the Duo Authentication Proxy. The proxy supports Windows and Linux systems (in particular, we recommend Windows Server 2012 R2 or later, Red Hat Enterprise Linux 6 or later, CentOS 6 or later, or Debian 6 or later). This Duo proxy server also acts as a RADIUS server — there's no need to deploy a separate RADIUS server to use Duo.";
+      text['link']  = "https://duo.com/docs/rras";
+      text['img']   = "/img/rras_network_diagram.png";
+      return text;
+
+    // Duo Web integrations
+    case 'duoweb':
+      text['title'] = "Duo Web";
+      text['body']  = "Duo Web makes it easy to add strong two-factor authentication to your web application. Client libraries are available for Python, Ruby, Classic ASP, ASP.NET, Java, PHP, Node.js, ColdFusion, and Perl. Implementing Duo two-factor authentication into your site involves simply adding a second login page and splitting your login handler into two parts. You should be familiar with your web application's programming language and authentication process.";
+      text['link']  = "https://duo.com/docs/duoweb";
+      text['img']   = "/img/websdk_network_diagram.png";
+      return text;
+    case 'wordpress':
+      text['title'] = "Duo for WordPress";
+      text['body']  = "Duo's WordPress plugin enables two-factor authentication for WordPress logins, complete with inline self-service enrollment and authentication prompt. The code is open-source and available on GitHub.";
+      text['link']  = "https://duo.com/docs/wordpress";
+      text['img']   = "/img/wordpress_network_diagram.png";
+      return text;
+    case 'confluence':
       text['title'] = "";
-      text['body']  = "";
-      text['link']  = "";
+      text['body']  = "Duo integrates with Atlassian Confluence to add two-factor authentication to your wiki logins, complete with inline self-service enrollment and authentication prompt. The code is open-source and available on GitHub. This project has been tested with Confluence 4.2, 5.1, 5.4, and 5.6 - 5.10. It is not compatible with Confluence 4.1. Check your Confluence version before installing Duo. Also note the location of your Confluence installation directory.";
+      text['link']  = "https://duo.com/docs/confluence";
+      text['img']   = "/img/confluence_network_diagram.png";
+      return text;
+    case 'jira':
+      text['title'] = "Duo for JIRA Software";
+      text['body']  = "Duo integrates with the on-premises Atlassian JIRA Software project and issue tracking application to add two-factor authentication to your logins, complete with inlineself-service enrollment and authentication prompt. The code is open-source and available on GitHub. Duo for JIRA Software has been tested against JIRA 6.1, 6.4, and 7.0 - 7.2. Onlyon-premises installations of JIRA Software are supported. Mobile browsers may experience issues logging on with two-factor and are not currently supported. Check your JIRA version beforeinstalling Duo. Also note the location of your JIRA installation directory.";
+      text['link']  = "https://duo.com/docs/jira";
+      text['img']   = "/img/jira_network_diagram.png";
+      return text;
+    case 'drupal':
+      text['title'] = "Duo for Drupal";
+      text['body']  = "Duo integrates with for Drupal 6.x/7.x sites to add two-factor authentication to your logins, complete with inline self-service enrollment and authentication prompt. Thecode is open-source and available on GitHub. This application is not compatible with Drupal 8. If you'd like to be notified when Duo releases login protection for Drupal 8, please contactSupport.";
+      text['link']  = "https://duo.com/docs/drupal";
+      text['img']   = "/img/drupal_network_diagram.png";
+      return text;
+    case 'splunk':
+      text['title'] = "Splunk";
+      text['body']  = "Duo integrates with Splunk to add two-factor authentication to your Splunk logins, complete with inline self-service enrollment and authentication prompt. Before startingto add two-factor authentication to Splunk, make sure that Duo is compatible with your Splunk install. Log into Splunk's web interface and click the about link in the top right corner.Splunk 6.5 and later natively includes Duo Security MFA. Users of Splunk 6.5 do not need to download and install the Duo plugin from Duo. If you're using Splunk 6.4 or earlier, you'llneed to download and install a Duo plugin. Instructions for Splunk versions 6.4 and earlier";
+      text['link']  = "https://duo.com/docs/splunk";
+      text['img']   = "/img/splunk-network-diagram.png";
+      return text;
+    case 'shibboleth':
+      text['title'] = "Duo for Shibboleth Identity Provider v3";
+      text['body']  = "Duo integrates with Shibboleth to add two-factor authentication for Shibboleth identity providers, complete with inline self-service enrollment and authentication prompt.The code is open-source and available on GitHub. This plugin has been tested with Shibboleth Identity Provider 3.1.1.";
+      text['link']  = "https://duo.com/docs/shibboleth";
+      text['img']   = "/img/shibboleth_network_diagram.png";
+      return text;
+    case 'cas':
+      text['title'] = "Central Authentication Server (CAS)";
+      text['body']  = "Duo Security's two-factor authentication is able to secure access to Central Authentication Server (CAS) deployments, complete with self-service enrollment andauthentication prompt. Duo Security does not provide a native CAS integration. Unicon includes support for Duo in their third-party multifactor module for CAS. See Unicon's CAS-MFAproject wiki for additional information.";
+      text['link']  = "https://duo.com/docs/cas";
+      text['img']   = "/img/";
+      return text;
+    case 'oam':
+      text['title'] = "Duo for Oracle Access Manager";
+      text['body']  = "Duo integrates with Oracle Access Manager to add two-factor authentication to your single sign-on logins, complete with inline self-service enrollment and authenticationprompt. Duo for Oracle Access Manager has been tested on Oracle Access Manager 11.1.2.3.0 running with WebLogic 10.3.6.0.";
+      text['link']  = "https://duo.com/docs/oam";
       text['img']   = "";
       return text;
-    case 'samosas':
-      text['title'] = "";
-      text['body']  = "";
-      text['link']  = "";
+    case 'lastpass':
+      text['title'] = "LastPass";
+      text['body']  = "LastPass has partnered with Duo Security to bring two-factor authentication to LastPass logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "This document takes you through configuring your LastPass Free, Premium, or Enterprise account to use Duo Push. You'll sign up for a Duo account, set up LastPass to useyour new Duo account, and enroll your LastPass username and your device for use with Duo's service. Once you complete this process, Duo Security’s two-factor authentication platformprotects access to your LastPass data by requiring approval when logging in to your LastPass Vault.";
       text['img']   = "";
       return text;
-    case 'samosas':
-      text['title'] = "";
-      text['body']  = "";
-      text['link']  = "";
-      text['img']   = "";
-      return text;
-    case 'samosas':
-      text['title'] = "";
-      text['body']  = "";
-      text['link']  = "";
+    case '1password':
+      text['title'] = "1Password";
+      text['body']  = "AgileBits has partnered with Duo Security to bring two-factor authentication to 1Password for Teams logins, complete with inline self-service enrollment andauthentication prompt. This document takes you through configuring your 1Password for Teams account to use Duo Push. You'll sign up for a Duo account, set up 1Password to use your new Duoaccount, and enroll your 1Password username and your device for use with Duo's service. Once you complete this process, Duo Security’s two-factor authentication platform protects accessto your 1Password data by requiring approval when logging in to your 1Password for Teams account.";
+      text['link']  = "https://duo.com/docs/1password";
       text['img']   = "";
       return text;
 
-// fake case for easily adding another line
-    case 'samosas':
-      text['title'] = "";
-      text['body']  = "";
-      text['link']  = "";
-      text['img']   = "";
-      return text;
+      // Cloud / SAML integrations
+      case 'asana':
+        text['title'] = "Duo Protection for Asana";
+        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Asana SSO logins, complete with inline self-service enrollment and authentication prompt.";
+        text['link']  = "https://duo.com/docs/asana";
+        text['img']   = "/img/dag-diagram.png";
+        return text;
+      case 'adobe-documentlcoud':
+        text['title'] = "Duo Protection for Adobe Document Cloud (Formerly EchoSign)";
+        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Adobe Document Cloud SSO logins, complete with inline self-service enrollment and authentication prompt.";
+        text['link']  = "https://duo.com/docs/adobe-documentcloud";
+        text['img']   = "/img/dag-diagram.png";
+        return text;
+      case 'aws':
+        text['title'] = "Duo Protection for Amazon Web Services (AWS)";
+        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Amazon Web Services (AWS) SSO logins, complete with inline self-service enrollment and authentication prompt.";
+        text['link']  = "https://duo.com/docs/aws";
+        text['img']   = "/img/dag-diagram.png";
+        return text;
+      case 'bamboohr':
+        text['title'] = "Duo Protection for BambooHR";
+        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to BambooHR SSO logins, complete with inline self-service enrollment and authentication prompt.";
+        text['link']  = "https://duo.com/docs/bamboohr";
+        text['img']   = "/img/dag-diagram.png";
+        return text;
+      case 'bluejeans':
+        text['title'] = "Duo Protection for BlueJeans";
+        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to BlueJeans SSO logins, complete with inline self-service enrollment and authentication prompt.";
+        text['link']  = "https://duo.com/docs/bluejeans";
+        text['img']   = "/img/dag-diagram.png";
+        return text;
+      case 'samosas':
+        text['title'] = "";
+        text['body']  = "";
+        text['link']  = "";
+        text['img']   = "/img/dag-diagram.png";
+        return text;
+      case 'samosas':
+        text['title'] = "";
+        text['body']  = "";
+        text['link']  = "";
+        text['img']   = "/img/dag-diagram.png";
+        return text;
+      case 'samosas':
+        text['title'] = "";
+        text['body']  = "";
+        text['link']  = "";
+        text['img']   = "/img/dag-diagram.png";
+        return text;
+      case 'samosas':
+        text['title'] = "";
+        text['body']  = "";
+        text['link']  = "";
+        text['img']   = "/img/dag-diagram.png";
+        return text;
+      case 'samosas':
+        text['title'] = "";
+        text['body']  = "";
+        text['link']  = "";
+        text['img']   = "/img/dag-diagram.png";
+        return text;
 
+
+
+// fake case for easily adding another row
+      case 'samosas':
+        text['title'] = "";
+        text['body']  = "";
+        text['link']  = "";
+        text['img']   = "";
+        return text;
+      case 'samosas':
+        text['title'] = "";
+        text['body']  = "";
+        text['link']  = "";
+        text['img']   = "";
+        return text;
+      case 'samosas':
+        text['title'] = "";
+        text['body']  = "";
+        text['link']  = "";
+        text['img']   = "";
+        return text;
+      case 'samosas':
+        text['title'] = "";
+        text['body']  = "";
+        text['link']  = "";
+        text['img']   = "";
+        return text;
+      case 'samosas':
+        text['title'] = "";
+        text['body']  = "";
+        text['link']  = "";
+        text['img']   = "";
+        return text;
+      case 'samosas':
+        text['title'] = "";
+        text['body']  = "";
+        text['link']  = "";
+        text['img']   = "";
+        return text;
   }
 }
 
