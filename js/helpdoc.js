@@ -8,7 +8,7 @@ function buildHTML(text) {
   var formattedString = "";
   formattedString += (text['title'] == "" ? "" : "</br><h1><em>" + text['title'] + "</em></h1>");
   formattedString += (text['body'] == "" ? "" : text['body'] + "</br></br>");
-  formattedString += (text['link'] == "" ? "" : "Documentation: <a href='" + text['link'] + "'>" + text['link'] + "</a></br>");
+  formattedString += (text['link'] == "" ? "" : "More Information: <a href='" + text['link'] + "'>" + text['link'] + "</a></br>");
   formattedString += (text['img'] == "" ? "" : "<img src='" + chrome.extension.getURL(text['img']) + "'></br>")
 
   return formattedString;
@@ -25,6 +25,14 @@ function docText(integration) {
   // get entry from masterlist of integration information
   var text = {};
   switch(integration) {
+
+    // Getting Started
+    case 'gettingstarted':
+      text['title'] = "Getting Started With Duo";
+      text['body'] = "To get started you will first want to sign up for an account at the link below. Once you have signed up for an account you can begin using all the features of Duo Security for 30 days!";
+      text['link'] = "https://signup.duo.com";
+      text['img'] = "";
+      return text;
 
     // Enrollment Options Section
     case 'inline':
