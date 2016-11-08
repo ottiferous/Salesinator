@@ -1,17 +1,20 @@
 function buildEmail(section) {
-
-  var format_string = "";
-  integration = docText(section);
-  // build template for emails
-  format_string += "<em>" + integration['title'] + "</em";
-  format_string += "</br></br>" + integration['body'] + "</br>";
-  format_string += "Documentation: <a href='" + integration['link'] + "'>" + integration['link'] + "</a></br>";
-  if (integration['img'] != "")
-    format_string += "Network Diagram: <img src='" + integration['img'] + "'></br>";
-
-  return format_string;
+  // build template for emails ( refactor into own function? )
+  return buildHTML(docText(section));
 }
 
+// builds HTML formatting for text
+function buildHTML(text) {
+  var formattedString = "";
+  formattedString += (text['title'] == "" ? "" : "<h1><em>" + text['title'] + "</em></h1>");
+  formattedString += (text['body']  == "" ? "" : "</br></br>" + text['body'] + "</br></br>");
+  formattedString += (text['link']  == "" ? "" : "Documentation: <a href='" + text['link'] + "'>" + text['link'] + "</a></br>");
+  formattedString += (text['img'] == "" ? "" : "Network Diagram: <img src='" + text['img'] + "'></br>")
+
+  return formattedString;
+}
+
+// generates the sign-up email information
 function signup() {
   return '<em>Step 1:</em>Signup for a Duo Security Account: <a href="https://signup.duo.com">https://signup.duo.com</a> \
    <em>Step 2:</em>Decide which enrollment option(s) best meet your needs: <a href ="https://www.duo.com/docs/enrolling_users">https://www.duo.com/docs/enrolling_users</a> \
@@ -338,48 +341,55 @@ function docText(integration) {
         text['link']  = "";
         text['img']   = "/img/dag-diagram.png";
         return text;
-
-
-
-// fake case for easily adding another row
-      case 'samosas':
+      default:
         text['title'] = "";
         text['body']  = "";
         text['link']  = "";
         text['img']   = "";
         return text;
-      case 'samosas':
-        text['title'] = "";
-        text['body']  = "";
-        text['link']  = "";
-        text['img']   = "";
-        return text;
-      case 'samosas':
-        text['title'] = "";
-        text['body']  = "";
-        text['link']  = "";
-        text['img']   = "";
-        return text;
-      case 'samosas':
-        text['title'] = "";
-        text['body']  = "";
-        text['link']  = "";
-        text['img']   = "";
-        return text;
-      case 'samosas':
-        text['title'] = "";
-        text['body']  = "";
-        text['link']  = "";
-        text['img']   = "";
-        return text;
-      case 'samosas':
-        text['title'] = "";
-        text['body']  = "";
-        text['link']  = "";
-        text['img']   = "";
-        return text;
-  }
+ }
 }
+
+
+
+/* fake case for easily adding another row
+      case 'samosas':
+        text['title'] = "";
+        text['body']  = "";
+        text['link']  = "";
+        text['img']   = "";
+        return text;
+      case 'samosas':
+        text['title'] = "";
+        text['body']  = "";
+        text['link']  = "";
+        text['img']   = "";
+        return text;
+      case 'samosas':
+        text['title'] = "";
+        text['body']  = "";
+        text['link']  = "";
+        text['img']   = "";
+        return text;
+      case 'samosas':
+        text['title'] = "";
+        text['body']  = "";
+        text['link']  = "";
+        text['img']   = "";
+        return text;
+      case 'samosas':
+        text['title'] = "";
+        text['body']  = "";
+        text['link']  = "";
+        text['img']   = "";
+        return text;
+      case 'samosas':
+        text['title'] = "";
+        text['body']  = "";
+        text['link']  = "";
+        text['img']   = "";
+        return text;
+*/
 
 self = '<b><u>Self-Service Portal</u></b><br />Help your users help themselves. All Duo web integrations can now be enabled with the Self-Service Portal. A single checkbox in the Admin Panel adds a fully-featured management portal that users can access after completing primary and secondary authentication.<br /><img src="https://www.duo.com/static/images/blog/ssp-enable.png">';
 dev = '<b><u>Trusted Devices</u></b><br />In the Duo administrative interface, an administrator can enable the \"trusted devices\" support on a per-integration basis. Users will then see a checkbox in their login screen that will allow them to opt-in to remembering their device. If a user completes Duo authentication and selects that checkbox, they will not be prompted for two-factor again for the preset number of days when logging in from the same browser/device.<br />This feature is currently supported in all our web-based integrations (eg. SSL VPNs, Outlook Web Access, Shibboleth, WordPress, etc).<br /><img style="height:125px" src="https://duo.com/assets/img/documentation/creating_applications/application-trusted-devices_2x.png"><br />Documentation: <a href="https://duo.com/docs/trusted_devices">https://duo.com/docs/trusted_devices</a>';
