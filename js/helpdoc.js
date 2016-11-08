@@ -6,10 +6,10 @@ function buildEmail(section) {
 // builds HTML formatting for text
 function buildHTML(text) {
   var formattedString = "";
-  formattedString += (text['title'] == "" ? "" : "<h1><em>" + text['title'] + "</em></h1>");
-  formattedString += (text['body']  == "" ? "" : "</br></br>" + text['body'] + "</br></br>");
-  formattedString += (text['link']  == "" ? "" : "Documentation: <a href='" + text['link'] + "'>" + text['link'] + "</a></br>");
-  formattedString += (text['img'] == "" ? "" : "Network Diagram: <img src='" + text['img'] + "'></br>")
+  formattedString += (text['title'] == "" ? "" : "</br><h1><em>" + text['title'] + "</em></h1>");
+  formattedString += (text['body'] == "" ? "" : text['body'] + "</br></br>");
+  formattedString += (text['link'] == "" ? "" : "Documentation: <a href='" + text['link'] + "'>" + text['link'] + "</a></br>");
+  formattedString += (text['img'] == "" ? "" : "Network Diagram: <img src='" + chrome.extension.getURL(text['img']) + "'></br>")
 
   return formattedString;
 }
