@@ -12,5 +12,9 @@
   "background": {
     "scripts": ["/background.js"],
     "persistance": "false"
-  }
+  },
+
+  "web_accessible_resources": [
+    "img/*.png"
+  ]
 }
