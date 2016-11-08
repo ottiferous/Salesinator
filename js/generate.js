@@ -20,7 +20,7 @@ function getSalesinatorOptions() {
       }
     }
   }
-  console.log("FINALHTML: " + finalHTML);
+  //console.log("FINALHTML: " + finalHTML);
   document.getElementById('foobar').innerHTML += finalHTML;
   return false;
 }
