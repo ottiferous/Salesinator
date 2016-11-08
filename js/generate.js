@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function(evt) {
 function getSalesinatorOptions() {
   optionsList =  document.getElementsByTagName("select");
   finalHTML = "";
+
   for (i = 0; i < optionsList.length; i++) {
     try {
       // if the option is found add it to the HTML list
@@ -16,6 +17,7 @@ function getSalesinatorOptions() {
       } else { console.log("Null Entry"); }
     } catch(e){
       if(e){
+        // log any errors to the console
         console.log(e);
       }
     }

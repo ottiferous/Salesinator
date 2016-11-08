@@ -9,7 +9,7 @@ function buildHTML(text) {
   formattedString += (text['title'] == "" ? "" : "</br><h1><em>" + text['title'] + "</em></h1>");
   formattedString += (text['body'] == "" ? "" : text['body'] + "</br></br>");
   formattedString += (text['link'] == "" ? "" : "Documentation: <a href='" + text['link'] + "'>" + text['link'] + "</a></br>");
-  formattedString += (text['img'] == "" ? "" : "Network Diagram: <img src='" + chrome.extension.getURL(text['img']) + "'></br>")
+  formattedString += (text['img'] == "" ? "" : "<img src='" + chrome.extension.getURL(text['img']) + "'></br>")
 
   return formattedString;
 }
