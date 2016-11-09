@@ -20,12 +20,7 @@
 			This will generate an email for you at the bottom of the page you can copy and paste into an email.</br>
 			Click "clear" if you want to start over.
 		</p>
-    <form>Getting Started?
-      <select id="trial">
-        <option value="">No</option>
-        <option value="gettingstarted">Yes</option>
-      </select>
-    </br>
+    <form>
     <table>
       <tr>
         <td>
@@ -567,394 +562,76 @@
             <option value="okta">Okta</option>
             <option value="pingfederate">Ping Federate</option>
           </select>
-
-
-
-
-
-
-
-
-          <tr>
-             <td>
-               Enrollment Options<br>
-               <select id="enrolloptions1">
-                  <option value-"blank"=""></option>
-                  <option value="inline">In-Line Self-Enrollment</option>
-                  <option value="bulk">Bulk Email Enrollment</option>
-                  <option value="adsy">Ad Sync</option>
-                  <option value="api">API Import</option>
-                  <option value="csv">CSV Import</option>
-                  <option value="manual">Manual Creation</option>
-               </select>
-               <br>
-               <select id="enrolloptions2">
-                  <option value-"blank"=""></option>
-                  <option value="inline">In-Line Self-Enrollment</option>
-                  <option value="bulk">Bulk Email Enrollment</option>
-                  <option value="adsy">Ad Sync</option>
-                  <option value="api">API Import</option>
-                  <option value="csv">CSV Import</option>
-                  <option value="manual">Manual Creation</option>
-               </select>
-               <br>
-               <select id="enrolloptions3">
-                  <option value-"blank"=""></option>
-                  <option value="inline">In-Line Self-Enrollment</option>
-                  <option value="bulk">Bulk Email Enrollment</option>
-                  <option value="adsy">Ad Sync</option>
-                  <option value="api">API Import</option>
-                  <option value="csv">CSV Import</option>
-                  <option value="manual">Manual Creation</option>
-               </select>
-               <br>
-               <select id="enrolloptions4">
-                  <option value-"blank"=""></option>
-                  <option value="inline">In-Line Self-Enrollment</option>
-                  <option value="bulk">Bulk Email Enrollment</option>
-                  <option value="adsy">Ad Sync</option>
-                  <option value="api">API Import</option>
-                  <option value="csv">CSV Import</option>
-                  <option value="manual">Manual Creation</option>
-               </select>
-             </td>
-             <br>
-             <br>
-             <td>
-                Select Applications <br>
-                <select id="int1">
-                   <option value="blank"></option>
-                   <option value="array">Array Networks</option>
-                   <option value="barra">Barracuda SSLVPN</option>
-                   <option value="cas">CAS</option>
-                   <option value="ipsec">Cisco IPSEC</option>
-                   <option value="cisco">Cisco SSLVPN</option>
-                   <option value="check">CheckPoint</option>
-                   <option value="citrix">Citrix NetScaler</option>
-                   <option value="drupal">Drupal</option>
-                   <option value="f5">F5 Big IP APM</option>
-                   <option value="fortinet">Fortinet Fortigate</option>
-                   <option value="jira">Jira</option>
-                   <option value="juniper">Juniper SSLVPN</option>
-                   <option value="uac">Juniper UAC</option>
-                   <option value="last">Lastpass</option>
-                   <option value="ldap">LDAP</option>
-                   <option value="adfs">Microsoft ADFS</option>
-                   <option value="tmg">Microsoft TMG</option>
-                   <option value="uag">Microsoft UAG</option>
-                   <option value="owa">Microsoft OWA</option>
-                   <option value="rdp">Microsoft RDP</option>
-                   <option value="rdgate">Microsoft RDGateway</option>
-                   <option value="rdweb">Microsoft RDWeb</option>
-                   <option value="rras">Microsoft RRAS</option>
-                   <option value="net">NetMotion</option>
-                   <option value="okta">Okta</option>
-                   <option value="one">OneLogin</option>
-                   <option value="open">OpenVPN</option>
-                   <option value="access">OpenVPN Access Server</option>
-                   <option value="palo">Palo Alto Global Protect</option>
-                   <option value="people">PeopleSoft</option>
-                   <option value="radius">Radius</option>
-                   <option value="shibboleth">Shibboleth</option>
-                   <option value="sonic">SonicWall SRA</option>
-                   <option value="splunk">Splunk</option>
-                   <option value="ssh">SSH/Unix</option>
-                   <option value="vmware">VMware View</option>
-                   <option value="sdk">WebSDK</option>
-                   <option value="press">WordPress</option>
-                </select>
-                <br>
-                <select id="int2">
-                   <option value="blank"></option>
-                   <option value="array">Array Networks</option>
-                   <option value="barra">Barracuda SSLVPN</option>
-                   <option value="cas">CAS</option>
-                   <option value="ipsec">Cisco IPSEC</option>
-                   <option value="cisco">Cisco SSLVPN</option>
-                   <option value="check">CheckPoint</option>
-                   <option value="citrix">Citrix NetScaler</option>
-                   <option value="drupal">Drupal</option>
-                   <option value="f5">F5 Big IP APM</option>
-                   <option value="fortinet">Fortinet Fortigate</option>
-                   <option value="jira">Jira</option>
-                   <option value="juniper">Juniper SSLVPN</option>
-                   <option value="uac">Juniper UAC</option>
-                   <option value="last">Lastpass</option>
-                   <option value="ldap">LDAP</option>
-                   <option value="adfs">Microsoft ADFS</option>
-                   <option value="tmg">Microsoft TMG</option>
-                   <option value="uag">Microsoft UAG</option>
-                   <option value="owa">Microsoft OWA</option>
-                   <option value="rdp">Microsoft RDP</option>
-                   <option value="rdgate">Microsoft RDGateway</option>
-                   <option value="rdweb">Microsoft RDWeb</option>
-                   <option value="rras">Microsoft RRAS</option>
-                   <option value="net">NetMotion</option>
-                   <option value="okta">Okta</option>
-                   <option value="one">OneLogin</option>
-                   <option value="open">OpenVPN</option>
-                   <option value="access">OpenVPN Access Server</option>
-                   <option value="palo">Palo Alto Global Protect</option>
-                   <option value="people">PeopleSoft</option>
-                   <option value="radius">Radius</option>
-                   <option value="shib">Shibboleth</option>
-                   <option value="sonic">SonicWall SRA</option>
-                   <option value="splunk">Splunk</option>
-                   <option value="ssh">SSH/Unix</option>
-                   <option value="vmware">VMware View</option>
-                   <option value="sdk">WebSDK</option>
-                   <option value="press">WordPress</option>
-                </select>
-                <br>
-                <select id="int3">
-                   <option value="blank"></option>
-                   <option value="array">Array Networks</option>
-                   <option value="barra">Barracuda SSLVPN</option>
-                   <option value="cas">CAS</option>
-                   <option value="ipsec">Cisco IPSEC</option>
-                   <option value="cisco">Cisco SSLVPN</option>
-                   <option value="check">CheckPoint</option>
-                   <option value="citrix">Citrix NetScaler</option>
-                   <option value="drupal">Drupal</option>
-                   <option value="f5">F5 Big IP APM</option>
-                   <option value="fortinet">Fortinet Fortigate</option>
-                   <option value="jira">Jira</option>
-                   <option value="juniper">Juniper SSLVPN</option>
-                   <option value="uac">Juniper UAC</option>
-                   <option value="last">Lastpass</option>
-                   <option value="ldap">LDAP</option>
-                   <option value="adfs">Microsoft ADFS</option>
-                   <option value="tmg">Microsoft TMG</option>
-                   <option value="uag">Microsoft UAG</option>
-                   <option value="owa">Microsoft OWA</option>
-                   <option value="rdp">Microsoft RDP</option>
-                   <option value="rdgate">Microsoft RDGateway</option>
-                   <option value="rdweb">Microsoft RDWeb</option>
-                   <option value="rras">Microsoft RRAS</option>
-                   <option value="net">NetMotion</option>
-                   <option value="okta">Okta</option>
-                   <option value="one">OneLogin</option>
-                   <option value="open">OpenVPN</option>
-                   <option value="access">OpenVPN Access Server</option>
-                   <option value="palo">Palo Alto Global Protect</option>
-                   <option value="people">PeopleSoft</option>
-                   <option value="radius">Radius</option>
-                   <option value="shib">Shibboleth</option>
-                   <option value="sonic">SonicWall SRA</option>
-                   <option value="splunk">Splunk</option>
-                   <option value="ssh">SSH/Unix</option>
-                   <option value="vmware">VMware View</option>
-                   <option value="sdk">WebSDK</option>
-                   <option value="press">WordPress</option>
-                </select>
-                <br>
-                <select id="int4">
-                   <option value="blank"></option>
-                   <option value="array">Array Networks</option>
-                   <option value="barra">Barracuda SSLVPN</option>
-                   <option value="cas">CAS</option>
-                   <option value="ipsec">Cisco IPSEC</option>
-                   <option value="cisco">Cisco SSLVPN</option>
-                   <option value="check">CheckPoint</option>
-                   <option value="citrix">Citrix NetScaler</option>
-                   <option value="drupal">Drupal</option>
-                   <option value="f5">F5 Big IP APM</option>
-                   <option value="fortinet">Fortinet Fortigate</option>
-                   <option value="jira">Jira</option>
-                   <option value="juniper">Juniper SSLVPN</option>
-                   <option value="uac">Juniper UAC</option>
-                   <option value="last">Lastpass</option>
-                   <option value="ldap">LDAP</option>
-                   <option value="adfs">Microsoft ADFS</option>
-                   <option value="tmg">Microsoft TMG</option>
-                   <option value="uag">Microsoft UAG</option>
-                   <option value="owa">Microsoft OWA</option>
-                   <option value="rdp">Microsoft RDP</option>
-                   <option value="rdgate">Microsoft RDGateway</option>
-                   <option value="rdweb">Microsoft RDWeb</option>
-                   <option value="rras">Microsoft RRAS</option>
-                   <option value="net">NetMotion</option>
-                   <option value="okta">Okta</option>
-                   <option value="one">OneLogin</option>
-                   <option value="open">OpenVPN</option>
-                   <option value="access">OpenVPN Access Server</option>
-                   <option value="palo">Palo Alto Global Protect</option>
-                   <option value="people">PeopleSoft</option>
-                   <option value="radius">Radius</option>
-                   <option value="shib">Shibboleth</option>
-                   <option value="sonic">SonicWall SRA</option>
-                   <option value="splunk">Splunk</option>
-                   <option value="ssh">SSH/Unix</option>
-                   <option value="vmware">VMware View</option>
-                   <option value="sdk">WebSDK</option>
-                   <option value="press">WordPress</option>
-                </select>
-                <br>
-             </td>
-             <td>
-                Platform Features <br>
-                <select id="plat1">
-                   <option value="blank"></option>
-                   <option value="dag">Duo Access Gateway</option>
-                   <option value="policy">Policy and Controls</option>
-                   <option value="geolocation">Geo Location</option>
-                   <option value="anonymousnetworks">Anonymous Networks</option>
-                   <option value="deviceinsight">Device Insight</option>
-                </select>
-                <br>
-                <select id="plat2">
-                   <option value="blank"></option>
-                   <option value="dag">Duo Access Gateway</option>
-                   <option value="policy">Policy and Controls</option>
-                   <option value="geolocation">Geo Location</option>
-                   <option value="anonymousnetworks">Anonymous Networks</option>
-                   <option value="deviceinsight">Device Insight</option>
-                </select>
-                <br>
-                <select id="plat3">
-                   <option value="blank"></option>
-                   <option value="dag">Duo Access Gateway</option>
-                   <option value="policy">Policy and Controls</option>
-                   <option value="geolocation">Geo Location</option>
-                   <option value="anonymousnetworks">Anonymous Networks</option>
-                   <option value="deviceinsight">Device Insight</option>
-                </select>
-                <br>
-                <select id="plat4">
-                   <option value="blank"></option>
-                   <option value="dag">Duo Access Gateway</option>
-                   <option value="policy">Policy and Controls</option>
-                   <option value="geolocation">Geo Location</option>
-                   <option value="anonymousnetworks">Anonymous Networks</option>
-                   <option value="deviceinsight">Device Insight</option>
-                </select>
-             </td>
-          </tr>
-       </table>
-       <table>
-          <br>
-          <tr>
-             <td>
-               Enterprise Features <br>
-               <select id="ent1">
-                  <option value="blank"></option>
-                  <option value="adsync">AD Sync</option>
-                  <option value="factor">Factor Control</option>
-                  <option value="group">Groups Management</option>
-                  <option value="self">Self-Service Portal</option>
-                  <option value="dev">Trusted Devices</option>
-                  <option value="networks">Trust Networks</option>
-                  <option value="support">Support</option>
-               </select>
-               <br>
-               <select id="ent2">
-                  <option value="blank"></option>
-                  <option value="adsync">AD Sync</option>
-                  <option value="factor">Factor Control</option>
-                  <option value="group">Groups Management</option>
-                  <option value="self">Self-Service Portal</option>
-                  <option value="dev">Trusted Devices</option>
-                  <option value="networks">Trust Networks</option>
-                  <option value="support">Support</option>
-               </select>
-               <br>
-               <select id="ent3">
-                  <option value="blank"></option>
-                  <option value="adsync">AD Sync</option>
-                  <option value="factor">Factor Control</option>
-                  <option value="group">Groups Management</option>
-                  <option value="self">Self-Service Portal</option>
-                  <option value="dev">Trusted Devices</option>
-                  <option value="networks">Trust Networks</option>
-                  <option value="support">Support</option>
-               </select>
-               <br>
-               <select id="ent4">
-                  <option value="blank"></option>
-                  <option value="adsync">AD Sync</option>
-                  <option value="factor">Factor Control</option>
-                  <option value="group">Groups Management</option>
-                  <option value="self">Self-Service Portal</option>
-                  <option value="dev">Trusted Devices</option>
-                  <option value="networks">Trust Networks</option>
-                  <option value="support">Support</option>
-               </select>
-               <br>
-             </td>
-             <td>
-                </p>
-                <p>
-                   Helpful Links <br>
-                   <select id="hlink1">
-                      <option value="blank"></option>
-                      <option value="ratecard">Telephony Rate Card</option>
-                      <option value="userguide">End User Guide</option>
-                      <option value="authproxyreference">Authentication Proxy Reference Guide</option>
-                      <option value="deploypoc">Deploying a POC</option>
-                      <option value="productsecurity">Security & Reliability</option>
-                      <option value="privacy">Privacy</option>
-                      <option value="demo">Demo Page</option>
-                      <option value="pricingpage">Pricing Page</option>
-                   </select>
-                   <br>
-                   <select id="hlink2">
-                      <option value="blank"></option>
-                      <option value="ratecard">Telephony Rate Card</option>
-                      <option value="userguide">End User Guide</option>
-                      <option value="authproxyreference">Authentication Proxy Reference Guide</option>
-                      <option value="deploypoc">Deploying a POC</option>
-                      <option value="productsecurity">Security & Reliability</option>
-                      <option value="privacy">Privacy</option>
-                      <option value="demo">Demo Page</option>
-                      <option value="pricingpage">Pricing Page</option>
-                   </select>
-                   <br>
-                   <select id="hlink3">
-                      <option value="blank"></option>
-                      <option value="ratecard">Telephony Rate Card</option>
-                      <option value="userguide">End User Guide</option>
-                      <option value="authproxyreference">Authentication Proxy Reference Guide</option>
-                      <option value="deploypoc">Deploying a POC</option>
-                      <option value="productsecurity">Security & Reliability</option>
-                      <option value="privacy">Privacy</option>
-                      <option value="demo">Demo Page</option>
-                      <option value="pricingpage">Pricing Page</option>
-                   </select>
-                   <br>
-                   <select id="hlink4">
-                      <option value="blank"></option>
-                      <option value="ratecard">Telephony Rate Card</option>
-                      <option value="userguide">End User Guide</option>
-                      <option value="authproxyreference">Authentication Proxy Reference Guide</option>
-                      <option value="deploypoc">Deploying a POC</option>
-                      <option value="productsecurity">Security & Reliability</option>
-                      <option value="privacy">Privacy</option>
-                      <option value="demo">Demo Page</option>
-                      <option value="pricingpage">Pricing Page</option>
-                   </select>
-                   <br>
-             </td>
-          </tr>
-          <tr>
-             <td>
-	             Purchase Options
-							 <br>
-	             <select id="purchase">
-	                <option value="blank"></option>
-	                <option value="ss">Self-Service Credit Card</option>
-	                <option value="invoice">Invoice</option>
-	             </select>
-             </td>
-          </tr>
-       </table>
-       <br>
-       <br>
-       <br>
-       <button id="submit" type="button">Submit</button>
-       <button id="clear">Clear</button>
-       <div id="foobar">
-				 <!-- this is where the build.js code will generate the email -->
-			 </div>
+        </td>
+        <td>
+          API
+          </br>
+          <select id="api1">
+            <option value-"blank"=""></option>
+            <option value="duoweb">DuoWeb SDK</option>
+            <option value="authapi">Auth API</option>
+            <option value="adminapi">Admin API</option>
+          </select>
+          </br>
+          <select id="api2">
+            <option value-"blank"=""></option>
+            <option value="duoweb">DuoWeb SDK</option>
+            <option value="authapi">Auth API</option>
+            <option value="adminapi">Admin API</option>
+          </select>
+          </br>
+          <select id="api3">
+            <option value-"blank"=""></option>
+            <option value="duoweb">DuoWeb SDK</option>
+            <option value="authapi">Auth API</option>
+            <option value="adminapi">Admin API</option>
+          </select>
+        </td>
+        <td>
+          Reference
+          </br>
+          <select id="reference1">
+            <option value-"blank"=""></option>
+            <option value="authproxy">Authproxy</option>
+            <option value="duo_help_desk_guide">Duo Help Desk Guide</option>
+            <option value="guide_to_business_continuity_preparedness">Business Continuity Preparedness</option>
+            <option value="checksums">Checksums</option>
+          </select>
+          <select id="reference2">
+            <option value-"blank"=""></option>
+            <option value="authproxy">Authproxy</option>
+            <option value="duo_help_desk_guide">Duo Help Desk Guide</option>
+            <option value="guide_to_business_continuity_preparedness">Business Continuity Preparedness</option>
+            <option value="checksums">Checksums</option>
+          </select>
+          <select id="reference3">
+            <option value-"blank"=""></option>
+            <option value="authproxy">Authproxy</option>
+            <option value="duo_help_desk_guide">Duo Help Desk Guide</option>
+            <option value="guide_to_business_continuity_preparedness">Business Continuity Preparedness</option>
+            <option value="checksums">Checksums</option>
+          </select>
+        </td>
+        <td>
+        Getting Started?
+        </br>
+        </br>
+        </br>
+        <select id="trial">
+          <option value="">No</option>
+          <option value="gettingstarted">Yes</option>
+        </select>
+        </td>
+      </tr>
+    </table>
+    </br>
+    </br>
+    </br>
+    <button id="submit" type="button">Submit</button>
+    <button id="clear">Clear</button>
+    <div id="foobar">
+		 <!-- this is where the build.js code will generate the email -->
+		</div>
       </form>
       <div id="template">
       </div>
