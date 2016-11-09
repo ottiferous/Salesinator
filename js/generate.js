@@ -4,6 +4,12 @@ document.addEventListener('DOMContentLoaded', function(evt) {
   evt.preventDefault();
 });
 
+/*
+iterate through the 'select' elements within page.html and build new HTML to inject
+ToDo:
+      -build logic to have more control over the order things are appended into the HTML
+
+*/
 function getSalesinatorOptions() {
   optionsList =  document.getElementsByTagName("select");
   finalHTML = "";

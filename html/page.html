@@ -1,10 +1,24 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
 	"http://www.w3.org/TR/html4/strict.dtd">
-<!-- Updated: Lynn Marie Mackie 01/13/2016 -->
-<!-- Updated: Andrew Marrone    06/30/2016 -->
+<!-- Andrew Marrone - 11/09/2016 -->
+<!-- source available at: https://github.com/ottiferous/salesinator -->
+
+<!--
+  About: This project is designed to generate snippets of information for emails
+          that can then be sent out to people who need information but can't
+          quite figure out how to check documentation pages.
+  Scope: Only publicly available information is stored in this extension. If you
+          are not part of Duo and want to use this, feel free to use it as a base
+          for designing your own cool tool! This software is offered as-is.
+  ToDo:
+          - dynamically build these lists through javascript
+          - pull information from https://duo.com/docs so it is always up to date
+          - have a pop-up window with the text to copy
+          - copy the text directly to the clipboard when button is clicked
+-->
 <html>
   <head>
-    <title>Duo Sales-inator</title>
+    <title>Duo Salesinator</title>
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <script style="display: none" src="/js/helpdoc.js"></script>
     <script style="display: none" src="/js/generate.js"></script>
@@ -12,8 +26,8 @@
   <body>
     <header>
       <img src="logo.png">
-      <h1>Sales-inator 3.0</h1>
-      <h3>Customer Follow-up Document</h3>
+      <h1>Salesinator</h1>
+      Generating Documentation since November 2016!
     </header>
     <p>
       Select the information for the customer from the drop-down menus below, and then click on "submit".</br>
@@ -612,16 +626,6 @@
             <option value="checksums">Checksums</option>
           </select>
         </td>
-        <td>
-        Getting Started?
-        </br>
-        </br>
-        </br>
-        <select id="trial">
-          <option value="">No</option>
-          <option value="gettingstarted">Yes</option>
-        </select>
-        </td>
       </tr>
     </table>
     </br>
@@ -630,7 +634,7 @@
     <button id="submit" type="button">Submit</button>
     <button id="clear">Clear</button>
     <div id="foobar">
-		 <!-- this is where the build.js code will generate the email -->
+		 <!-- this is where the build.js code generates the email -->
 		</div>
       </form>
       <div id="template">

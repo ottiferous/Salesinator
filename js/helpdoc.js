@@ -14,13 +14,12 @@ function buildHTML(text) {
   return formattedString;
 }
 
-// generates the sign-up email information
-function signup() {
-  return '<em>Step 1:</em>Signup for a Duo Security Account: <a href="https://signup.duo.com">https://signup.duo.com</a> \
-   <em>Step 2:</em>Decide which enrollment option(s) best meet your needs: <a href ="https://www.duo.com/docs/enrolling_users">https://www.duo.com/docs/enrolling_users</a> \
-   <em>Step 3:</em> Setup your Applications';
-}
-
+/*
+  excessive switch statement handles all of the keys from page.html 'select' elements.
+  ToDo:
+        -store this list in a DB / flat file we can maintain separate from the extension
+        -clean up the cloud section to reduce redundancy
+*/
 function docText(integration) {
   // get entry from masterlist of integration information
   var text = {};
