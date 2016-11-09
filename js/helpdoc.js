@@ -428,495 +428,495 @@ function docText(integration) {
       text['img']   = "";
       return text;
 
-      // Cloud / SAML integrations
-      case 'asana':
-        text['title'] = "Duo Protection for Asana";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Asana SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/asana";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'adobe-documentlcoud':
-        text['title'] = "Duo Protection for Adobe Document Cloud (Formerly EchoSign)";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Adobe Document Cloud SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/adobe-documentcloud";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'aws':
-        text['title'] = "Duo Protection for Amazon Web Services (AWS)";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Amazon Web Services (AWS) SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/aws";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'bamboohr':
-        text['title'] = "Duo Protection for BambooHR";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to BambooHR SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/bamboohr";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'bluejeans':
-        text['title'] = "Duo Protection for BlueJeans";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to BlueJeans SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/bluejeans";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'bomgar-sso':
-        text['title'] = "Duo Protection for Bomgar";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Bomgar SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/bomgar-sso";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'bonusly':
-        text['title'] = "Duo Protection for Bonusly";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Bonusly SSO logins, complete with inline self-service enrollment and authentication prompt. Note: Bonusly requires Duo Access Gateway version 1.2.1 or greater. Please upgrade your Duo Access Gateway before attempting to use Bonusly.";
-        text['link']  = "https://duo.com/docs/bonusly";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'box':
-        text['title'] = "Duo Protection for box";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Box SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/box";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'canvas':
-        text['title'] = "Duo Protection for Canvas";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Canvas SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/canvas";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'clarizen':
-        text['title'] = "Duo Protection for Clarizen";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Clarizen SSO logins, complete with inline self-service enrollment and authentication prompt. Note: Clarizen requires Duo Access Gateway version 1.2.1 or greater. Please upgrade your Duo Access Gateway before attempting to use Clarizen.";
-        text['link']  = "https://duo.com/docs/clarizen";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'cloudlock':
-        text['title'] = "Duo Protection for CloudLock";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to CloudLock SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/cloudlock";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'confluencesso':
-        text['title'] = "Duo Protection for Confluence SSO";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Confluence SSO logins, complete with inline self-service enrollment and authentication prompt. If you're looking to protect non-SAML logins to your Confluence service, please see our Confluence plugin documentation.";
-        text['link']  = "https://duo.com/docs/confluencesso";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'crashplan':
-        text['title'] = "Duo Protection for CrashPlan";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to CrashPlan SSO logins, complete with inline self-service enrollment and authentication prompt. Note: Duo Protection for CrashPlan has been tested on CrashPlan Server 5.1.0 and 5.3.0. CrashPlan requires Duo Access Gateway version 1.3.0 or greater. Please upgrade your Duo Access Gateway before attempting to use CrashPlan.";
-        text['link']  = "https://duo.com/docs/crashplan";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'datadog':
-        text['title'] = "Duo Protection for Datadog";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Datadog SSO logins, complete with inline self-service enrollment and authentication prompt. Note: Datadog requires Duo Access Gateway version 1.3.0 or greater. Please upgrade your Duo Access Gateway before attempting to use Datadog.";
-        text['link']  = "https://duo.com/docs/datadog";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'desk':
-        text['title'] = "Duo Protection for Desk";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Desk SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/desk";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'docusign':
-        text['title'] = "Duo Protection for DocuSign";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to DocuSign SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/docusign";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'dropbox':
-        text['title'] = "Duo Protection for Dropbox";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Dropbox SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/dropbox";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'egnyte':
-        text['title'] = "Duo Protection for Egnyte";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Egnyte SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/egnyte";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'evernote':
-        text['title'] = "Duo Protection for Evernote";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Evernote SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/evernote";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'expensify':
-        text['title'] = "Duo Protection for Expensify";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Expensify SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/expensify";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'freshdesk':
-        text['title'] = "Duo Protection for Freshdesk";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Freshdesk SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/freshdesk";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'github-enterprise':
-        text['title'] = "Duo Protection for GitHub Enterprise";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to GitHub Enterprise SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/github-enterprise";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'gotomeeting':
-        text['title'] = "Duo Protection for GoToMeeting";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to GoToMeeting SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/gotomeeting";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'greenhouse':
-        text['title'] = "Duo Protection for Greenhouse";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Greenhouse SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/greenhouse";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'gapps':
-        text['title'] = "Duo Protection for G Suite (Formerly Google Apps)";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to G Suite SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/gapps";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'hackerone':
-        text['title'] = "Duo Protection for HackerOne";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to HackerOne SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/hackerone";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'heroku':
-        text['title'] = "Duo Protection for Heroku";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Heroku SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/heroku";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'intacct':
-        text['title'] = "Duo Protection for Intacct";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Intacct SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/intacct";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'jamf-jss':
-        text['title'] = "Duo Protection for JAMF JSS";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to JAMF JSS SSO logins, complete with inline self-service enrollment and authentication prompt. Duo Protection for JAMF Software Server (JSS) is compatible with JAMF Cloud and JAMF JSS 9.93 or greater. Note: JAMF JSS requires Duo Access Gateway version 1.3.0 or greater. Please upgrade your Duo Access Gateway before attempting to use JAMF JSS.";
-        text['link']  = "https://duo.com/docs/jamf-jss";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'jitbit':
-        text['title'] = "Duo Protection for Jitbit";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Jitbit SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/jitbit";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'jirasso':
-        text['title'] = "Duo Protection for JIRA SSO";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to JIRA SSO logins, complete with inline self-service enrollment and authentication prompt. Note: If you're looking to protect non-SAML logins to your JIRA service, please see our JIRA plugin documentation.";
-        text['link']  = "https://duo.com/docs/jirasso";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'looker':
-        text['title'] = "Duo Protection for Looker";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Looker SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/looker";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'marketo':
-        text['title'] = "Duo Protection for Marketo";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Marketo SSO logins, complete with inline self-service enrollment and authentication prompt. Note: Marketo requires Duo Access Gateway version 1.2.1 or greater. Please upgrade your Duo Access Gateway before attempting to use Marketo.";
-        text['link']  = "https://duo.com/docs/marketo";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'meraki':
-        text['title'] = "Duo Protection for Meraki";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Meraki SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/meraki";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'namely':
-        text['title'] = "Duo Protection for Namely";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Namely SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/namely";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'new-relic':
-        text['title'] = "Duo Protection for New Relic";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to New Relic SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/new-relic";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'o365':
-        text['title'] = "Duo Protection for Office 365";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Office 365 SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/o365";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'opendns':
-        text['title'] = "Duo Protection for OpenDNS";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to OpenDNS SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/opendns";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'pagerduty':
-        text['title'] = "Duo Protection for PagerDuty";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to PagerDuty SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/pagerduty";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'remedyforce':
-        text['title'] = "Duo Protection for BMC Remedyforce";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Remedyforce single sign-on logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/remedyforce";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'ringcentral':
-        text['title'] = "Duo Protection for RingCentral";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to RingCentral SSO logins, complete with inline self-service enrollment and authentication prompt. Note: RingCentral requires Duo Access Gateway version 1.2.1 or greater. Please upgrade your Duo Access Gateway before attempting to use RingCentral.";
-        text['link']  = "https://duo.com/docs/ringcentral";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'robin':
-        text['title'] = "Duo Protection for Robin";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Robin SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/robin";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'salesforce':
-        text['title'] = "Duo Protection for Salesforce";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Salesforce single sign-on logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/salesforce";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'samanage':
-        text['title'] = "Duo Protection for Samanage";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Samanage SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/samanage";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'saucelabs':
-        text['title'] = "Duo Protection for Sauce Labs";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Sauce Labs SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/saucelabs";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'sharefile':
-        text['title'] = "Duo Protection for ShareFile";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to ShareFile SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/sharefile";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'signalsciences':
-        text['title'] = "Duo Protection for Signal Sciences";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Signal Sciences SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/signalsciences";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'slack':
-        text['title'] = "Duo Protection for Slack";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Slack SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/slack";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'smartsheet':
-        text['title'] = "Duo Protection for Smartsheet";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Smartsheet SSO logins, complete with inline self-service enrollment and authentication prompt. Note: Smartsheet requires Duo Access Gateway version 1.2.0 or greater. Please upgrade your Duo Access Gateway before attempting to use Smartsheet.";
-        text['link']  = "https://duo.com/docs/smartsheet";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'statuspageio':
-        text['title'] = "Duo Protection for StatusPage.io";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to StatusPage.io SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/statuspageio";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'sugarcrm':
-        text['title'] = "Duo Protection for SugarCRM";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to SugarCRM SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/sugarcrm";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'sumologic':
-        text['title'] = "Duo Protection for Sumo Logic";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Sumo Logic SSO logins, complete with inline self-service enrollment and authentication prompt. Note: Sumo Logic requires Duo Access Gateway version 1.2.1 or greater. Please upgrade your Duo Access Gateway before attempting to use Sumo Logic.";
-        text['link']  = "https://duo.com/docs/sumologic";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'syncplicity':
-        text['title'] = "Duo Protection for Syncplicity";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Syncplicity SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/syncplicity";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'udemy':
-        text['title'] = "Duo Protection for Udemy";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Udemy SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/udemy";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'uservoice':
-        text['title'] = "Duo Protection for UserVoice";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to UserVoice SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/uservoice";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'webex':
-        text['title'] = "Duo Protection for WebEx";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to WebEx SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/webex";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'facebookatwork':
-        text['title'] = "Duo Protection for Workplace by Facebook (Formerly Facebook at Work)";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Workplace by Facebook SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/facebookatwork";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'zendesk':
-        text['title'] = "Duo Protection for Zendesk";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Zendesk SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/zendesk";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'zoom':
-        text['title'] = "Duo Protection for Zoom";
-        text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Zoom SSO logins, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/zoom";
-        text['img']   = "img/dag-diagram.png";
-        return text;
-      case 'onelogin':
-        text['title'] = "OneLogin";
-        text['body']  = "Duo integrates with OneLogin to add two-factor authentication, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/onelogin";
-        text['img']   = "";
-        return text;
-      case 'okta':
-        text['title'] = "Okta";
-        text['body']  = "Duo integrates with Okta to add two-factor authentication, complete with inline self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/okta";
-        text['img']   = "";
-        return text;
-      case 'pingfederate':
-        text['title'] = "PingFederate";
-        text['body']  = "Ping Identity has partnered with Duo Security to provide two-factor authentication for PingFederate® logins, complete with self-service enrollment and authentication prompt. PingFederate® is a full-featured federation server that provides identity management, web single sign-on, and API security for customers, partners, and employees. Users can securely access the applications they require with a single identity using any device. PingFederate® supports all of the current identity standards including SAML, WS-Federation, WS-Trust, OAuth, and OpenID Connect. Note: Duo's two-factor authentication is now available for PingFederate SSO user logins.";
-        text['link']  = "https://duo.com/docs/pingfederate";
-        text['img']   = "";
-        return text;
+    // Cloud / SAML integrations
+    case 'asana':
+      text['title'] = "Duo Protection for Asana";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Asana SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/asana";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'adobe-documentlcoud':
+      text['title'] = "Duo Protection for Adobe Document Cloud (Formerly EchoSign)";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Adobe Document Cloud SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/adobe-documentcloud";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'aws':
+      text['title'] = "Duo Protection for Amazon Web Services (AWS)";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Amazon Web Services (AWS) SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/aws";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'bamboohr':
+      text['title'] = "Duo Protection for BambooHR";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to BambooHR SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/bamboohr";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'bluejeans':
+      text['title'] = "Duo Protection for BlueJeans";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to BlueJeans SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/bluejeans";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'bomgar-sso':
+      text['title'] = "Duo Protection for Bomgar";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Bomgar SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/bomgar-sso";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'bonusly':
+      text['title'] = "Duo Protection for Bonusly";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Bonusly SSO logins, complete with inline self-service enrollment and authentication prompt. Note: Bonusly requires Duo Access Gateway version 1.2.1 or greater. Please upgrade your Duo Access Gateway before attempting to use Bonusly.";
+      text['link']  = "https://duo.com/docs/bonusly";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'box':
+      text['title'] = "Duo Protection for box";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Box SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/box";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'canvas':
+      text['title'] = "Duo Protection for Canvas";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Canvas SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/canvas";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'clarizen':
+      text['title'] = "Duo Protection for Clarizen";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Clarizen SSO logins, complete with inline self-service enrollment and authentication prompt. Note: Clarizen requires Duo Access Gateway version 1.2.1 or greater. Please upgrade your Duo Access Gateway before attempting to use Clarizen.";
+      text['link']  = "https://duo.com/docs/clarizen";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'cloudlock':
+      text['title'] = "Duo Protection for CloudLock";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to CloudLock SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/cloudlock";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'confluencesso':
+      text['title'] = "Duo Protection for Confluence SSO";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Confluence SSO logins, complete with inline self-service enrollment and authentication prompt. If you're looking to protect non-SAML logins to your Confluence service, please see our Confluence plugin documentation.";
+      text['link']  = "https://duo.com/docs/confluencesso";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'crashplan':
+      text['title'] = "Duo Protection for CrashPlan";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to CrashPlan SSO logins, complete with inline self-service enrollment and authentication prompt. Note: Duo Protection for CrashPlan has been tested on CrashPlan Server 5.1.0 and 5.3.0. CrashPlan requires Duo Access Gateway version 1.3.0 or greater. Please upgrade your Duo Access Gateway before attempting to use CrashPlan.";
+      text['link']  = "https://duo.com/docs/crashplan";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'datadog':
+      text['title'] = "Duo Protection for Datadog";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Datadog SSO logins, complete with inline self-service enrollment and authentication prompt. Note: Datadog requires Duo Access Gateway version 1.3.0 or greater. Please upgrade your Duo Access Gateway before attempting to use Datadog.";
+      text['link']  = "https://duo.com/docs/datadog";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'desk':
+      text['title'] = "Duo Protection for Desk";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Desk SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/desk";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'docusign':
+      text['title'] = "Duo Protection for DocuSign";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to DocuSign SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/docusign";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'dropbox':
+      text['title'] = "Duo Protection for Dropbox";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Dropbox SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/dropbox";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'egnyte':
+      text['title'] = "Duo Protection for Egnyte";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Egnyte SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/egnyte";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'evernote':
+      text['title'] = "Duo Protection for Evernote";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Evernote SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/evernote";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'expensify':
+      text['title'] = "Duo Protection for Expensify";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Expensify SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/expensify";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'freshdesk':
+      text['title'] = "Duo Protection for Freshdesk";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Freshdesk SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/freshdesk";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'github-enterprise':
+      text['title'] = "Duo Protection for GitHub Enterprise";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to GitHub Enterprise SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/github-enterprise";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'gotomeeting':
+      text['title'] = "Duo Protection for GoToMeeting";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to GoToMeeting SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/gotomeeting";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'greenhouse':
+      text['title'] = "Duo Protection for Greenhouse";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Greenhouse SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/greenhouse";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'gapps':
+      text['title'] = "Duo Protection for G Suite (Formerly Google Apps)";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to G Suite SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/gapps";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'hackerone':
+      text['title'] = "Duo Protection for HackerOne";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to HackerOne SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/hackerone";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'heroku':
+      text['title'] = "Duo Protection for Heroku";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Heroku SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/heroku";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'intacct':
+      text['title'] = "Duo Protection for Intacct";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Intacct SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/intacct";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'jamf-jss':
+      text['title'] = "Duo Protection for JAMF JSS";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to JAMF JSS SSO logins, complete with inline self-service enrollment and authentication prompt. Duo Protection for JAMF Software Server (JSS) is compatible with JAMF Cloud and JAMF JSS 9.93 or greater. Note: JAMF JSS requires Duo Access Gateway version 1.3.0 or greater. Please upgrade your Duo Access Gateway before attempting to use JAMF JSS.";
+      text['link']  = "https://duo.com/docs/jamf-jss";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'jitbit':
+      text['title'] = "Duo Protection for Jitbit";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Jitbit SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/jitbit";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'jirasso':
+      text['title'] = "Duo Protection for JIRA SSO";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to JIRA SSO logins, complete with inline self-service enrollment and authentication prompt. Note: If you're looking to protect non-SAML logins to your JIRA service, please see our JIRA plugin documentation.";
+      text['link']  = "https://duo.com/docs/jirasso";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'looker':
+      text['title'] = "Duo Protection for Looker";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Looker SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/looker";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'marketo':
+      text['title'] = "Duo Protection for Marketo";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Marketo SSO logins, complete with inline self-service enrollment and authentication prompt. Note: Marketo requires Duo Access Gateway version 1.2.1 or greater. Please upgrade your Duo Access Gateway before attempting to use Marketo.";
+      text['link']  = "https://duo.com/docs/marketo";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'meraki':
+      text['title'] = "Duo Protection for Meraki";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Meraki SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/meraki";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'namely':
+      text['title'] = "Duo Protection for Namely";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Namely SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/namely";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'new-relic':
+      text['title'] = "Duo Protection for New Relic";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to New Relic SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/new-relic";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'o365':
+      text['title'] = "Duo Protection for Office 365";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Office 365 SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/o365";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'opendns':
+      text['title'] = "Duo Protection for OpenDNS";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to OpenDNS SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/opendns";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'pagerduty':
+      text['title'] = "Duo Protection for PagerDuty";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to PagerDuty SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/pagerduty";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'remedyforce':
+      text['title'] = "Duo Protection for BMC Remedyforce";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Remedyforce single sign-on logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/remedyforce";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'ringcentral':
+      text['title'] = "Duo Protection for RingCentral";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to RingCentral SSO logins, complete with inline self-service enrollment and authentication prompt. Note: RingCentral requires Duo Access Gateway version 1.2.1 or greater. Please upgrade your Duo Access Gateway before attempting to use RingCentral.";
+      text['link']  = "https://duo.com/docs/ringcentral";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'robin':
+      text['title'] = "Duo Protection for Robin";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Robin SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/robin";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'salesforce':
+      text['title'] = "Duo Protection for Salesforce";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Salesforce single sign-on logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/salesforce";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'samanage':
+      text['title'] = "Duo Protection for Samanage";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Samanage SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/samanage";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'saucelabs':
+      text['title'] = "Duo Protection for Sauce Labs";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Sauce Labs SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/saucelabs";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'sharefile':
+      text['title'] = "Duo Protection for ShareFile";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to ShareFile SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/sharefile";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'signalsciences':
+      text['title'] = "Duo Protection for Signal Sciences";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Signal Sciences SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/signalsciences";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'slack':
+      text['title'] = "Duo Protection for Slack";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Slack SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/slack";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'smartsheet':
+      text['title'] = "Duo Protection for Smartsheet";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Smartsheet SSO logins, complete with inline self-service enrollment and authentication prompt. Note: Smartsheet requires Duo Access Gateway version 1.2.0 or greater. Please upgrade your Duo Access Gateway before attempting to use Smartsheet.";
+      text['link']  = "https://duo.com/docs/smartsheet";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'statuspageio':
+      text['title'] = "Duo Protection for StatusPage.io";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to StatusPage.io SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/statuspageio";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'sugarcrm':
+      text['title'] = "Duo Protection for SugarCRM";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to SugarCRM SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/sugarcrm";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'sumologic':
+      text['title'] = "Duo Protection for Sumo Logic";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Sumo Logic SSO logins, complete with inline self-service enrollment and authentication prompt. Note: Sumo Logic requires Duo Access Gateway version 1.2.1 or greater. Please upgrade your Duo Access Gateway before attempting to use Sumo Logic.";
+      text['link']  = "https://duo.com/docs/sumologic";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'syncplicity':
+      text['title'] = "Duo Protection for Syncplicity";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Syncplicity SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/syncplicity";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'udemy':
+      text['title'] = "Duo Protection for Udemy";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Udemy SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/udemy";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'uservoice':
+      text['title'] = "Duo Protection for UserVoice";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to UserVoice SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/uservoice";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'webex':
+      text['title'] = "Duo Protection for WebEx";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to WebEx SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/webex";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'facebookatwork':
+      text['title'] = "Duo Protection for Workplace by Facebook (Formerly Facebook at Work)";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Workplace by Facebook SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/facebookatwork";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'zendesk':
+      text['title'] = "Duo Protection for Zendesk";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Zendesk SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/zendesk";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'zoom':
+      text['title'] = "Duo Protection for Zoom";
+      text['body']  = "Duo offers a variety of methods for adding two-factor authentication and flexible security policies to Zoom SSO logins, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/zoom";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+    case 'onelogin':
+      text['title'] = "OneLogin";
+      text['body']  = "Duo integrates with OneLogin to add two-factor authentication, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/onelogin";
+      text['img']   = "";
+      return text;
+    case 'okta':
+      text['title'] = "Okta";
+      text['body']  = "Duo integrates with Okta to add two-factor authentication, complete with inline self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/okta";
+      text['img']   = "";
+      return text;
+    case 'pingfederate':
+      text['title'] = "PingFederate";
+      text['body']  = "Ping Identity has partnered with Duo Security to provide two-factor authentication for PingFederate® logins, complete with self-service enrollment and authentication prompt. PingFederate® is a full-featured federation server that provides identity management, web single sign-on, and API security for customers, partners, and employees. Users can securely access the applications they require with a single identity using any device. PingFederate® supports all of the current identity standards including SAML, WS-Federation, WS-Trust, OAuth, and OpenID Connect. Note: Duo's two-factor authentication is now available for PingFederate SSO user logins.";
+      text['link']  = "https://duo.com/docs/pingfederate";
+      text['img']   = "";
+      return text;
 
-      // Other Applications section
-      case 'epic':
-        text['title'] = "Duo Authentication for Epic";
-        text['body']  = "Duo integrates with Epic Hyperspace to add two-factor authentication to Epic Hyperspace e-Prescription workflows.";
-        text['link']  = "https://duo.com/docs/epic";
-        text['img']   = "img/epic-network-diagram.png";
-        return text;
-      case 'awsworkspaces':
-        text['title'] = "Amazon WorkSpaces";
-        text['body']  = "Duo integrates with Amazon WorkSpaces to add two-factor authentication to WorkSpaces client logins.";
-        text['link']  = "https://duo.com/docs/awsworkspaces";
-        text['img']   = "img/awsws-network-diagram.png";
-        return text;
-      case 'peoplesoft':
-        text['title'] = "Two-Factor Authentication for PeopleSoft";
-        text['body']  = "Duo integrates with your PeopleSoft application to add two-factor authentication to portal logins by protecting LDAP connections. In this type of configuration, users will receive an automatic push or phone callback during login. Users who need to use a passcode have the option to append it to their existing password when logging in. Looking for multifactor protection for PeopleSoft logins with Duo's inline self-service enrollment and authentication prompt? Duo integrates with GreyHeller's ERP Firewall - a rules-based engine for securing PeopleSoft access.";
-        text['link']  = "https://duo.com/docs/peoplesoft";
-        text['img']   = "img/peoplesoft-network-diagram.png";
-        return text;
-      case 'juniper-uac':
-        text['title'] = "Juniper Networks Unified Access Control (UAC)";
-        text['body']  = "Duo integrates with your Juniper Networks Unified Access Control (UAC) to add two-factor authentication to VPN login.";
-        text['link']  = "https://duo.com/docs/juniper-uac";
-        text['img']   = "juniper_uac_network_diagram.png";
-        return text;
-      case 'vmwareview':
-        text['title'] = "VMware Horizon View";
-        text['body']  = "Duo integrates with VMware Horizon View 5.1 and newer to add two-factor authentication with passcodes to VMware View client login. This configuration allows use of passcodes to authenticate to VMWare View, as well as Duo's push and phone call authentication and SMS.";
-        text['link']  = "https://duo.com/docs/vmwareview";
-        text['img']   = "img/vmware_view_network_diagram.png";
-        return text;
-      case 'bomgar':
-        text['title'] = "Bomgar Remote Support";
-        text['body']  = "Duo integrates with your Bomgar Remote Support appliance to add two-factor authentication to web and console logins.";
-        text['link']  = "https://duo.com/docs/bomgar";
-        text['img']   = "img/bomgar-network-diagram.png";
-        return text;
-      case 'thycotic':
-        text['title'] = "Thycotic Secret Server";
-        text['body']  = "Thycotic Secret Server now includes Duo Security's two-factor authentication, complete with self-service enrollment and authentication prompt.";
-        text['link']  = "https://duo.com/docs/thycotic";
-        text['img']   = "img/thycotic_network_diagram.png";
-        return text;
-      case 'ldap':
-        text['title'] = "LDAP";
-        text['body']  = "Duo can be integrated with almost any device or system that supports using LDAP for authentication. In this type of configuration, users will receive an automatic push or phone callback during login. Users who need to use a passcode have the option to append it to their existing password when logging in.";
-        text['link']  = "https://duo.com/docs/ldap";
-        text['img']   = "img/ldap-network-diagram.png";
-        return text;
-      case 'radius':
-        text['title'] = "RADIUS";
-        text['body']  = "Duo integrates with almost any device or system that supports using RADIUS for authentication. In this type of configuration, users will append Duo passcodes — or factor names like phone or push — to their existing passwords when logging in.";
-        text['link']  = "https://duo.com/docs/radius";
-        text['img']   = "img/radius-network-diagram.png";
-        return text;
-      case 'duounix':
-        text['title'] = "Duo Unix - Two-Factor Authentication for SSH with PAM Support (pam_duo)";
-        text['body']  = "Duo can be easily added to any Unix system to protect remote (SSH) or local logins with the addition of a simple pam_duo PAM module. It has been tested on Linux (RedHat, Fedora, CentOS, Debian, Ubuntu, Amazon Linux), BSD (FreeBSD, NetBSD, OpenBSD), Solaris, HP-UX, and AIX. The code is open-source and available on GitHub.";
-        text['link']  = "https://duo.com/docs/duounix";
-        text['img']   = "img/unix_network_diagram.png";
-        return text;
+    // Other Applications section
+    case 'epic':
+      text['title'] = "Duo Authentication for Epic";
+      text['body']  = "Duo integrates with Epic Hyperspace to add two-factor authentication to Epic Hyperspace e-Prescription workflows.";
+      text['link']  = "https://duo.com/docs/epic";
+      text['img']   = "img/epic-network-diagram.png";
+      return text;
+    case 'awsworkspaces':
+      text['title'] = "Amazon WorkSpaces";
+      text['body']  = "Duo integrates with Amazon WorkSpaces to add two-factor authentication to WorkSpaces client logins.";
+      text['link']  = "https://duo.com/docs/awsworkspaces";
+      text['img']   = "img/awsws-network-diagram.png";
+      return text;
+    case 'peoplesoft':
+      text['title'] = "Two-Factor Authentication for PeopleSoft";
+      text['body']  = "Duo integrates with your PeopleSoft application to add two-factor authentication to portal logins by protecting LDAP connections. In this type of configuration, users will receive an automatic push or phone callback during login. Users who need to use a passcode have the option to append it to their existing password when logging in. Looking for multifactor protection for PeopleSoft logins with Duo's inline self-service enrollment and authentication prompt? Duo integrates with GreyHeller's ERP Firewall - a rules-based engine for securing PeopleSoft access.";
+      text['link']  = "https://duo.com/docs/peoplesoft";
+      text['img']   = "img/peoplesoft-network-diagram.png";
+      return text;
+    case 'juniper-uac':
+      text['title'] = "Juniper Networks Unified Access Control (UAC)";
+      text['body']  = "Duo integrates with your Juniper Networks Unified Access Control (UAC) to add two-factor authentication to VPN login.";
+      text['link']  = "https://duo.com/docs/juniper-uac";
+      text['img']   = "juniper_uac_network_diagram.png";
+      return text;
+    case 'vmwareview':
+      text['title'] = "VMware Horizon View";
+      text['body']  = "Duo integrates with VMware Horizon View 5.1 and newer to add two-factor authentication with passcodes to VMware View client login. This configuration allows use of passcodes to authenticate to VMWare View, as well as Duo's push and phone call authentication and SMS.";
+      text['link']  = "https://duo.com/docs/vmwareview";
+      text['img']   = "img/vmware_view_network_diagram.png";
+      return text;
+    case 'bomgar':
+      text['title'] = "Bomgar Remote Support";
+      text['body']  = "Duo integrates with your Bomgar Remote Support appliance to add two-factor authentication to web and console logins.";
+      text['link']  = "https://duo.com/docs/bomgar";
+      text['img']   = "img/bomgar-network-diagram.png";
+      return text;
+    case 'thycotic':
+      text['title'] = "Thycotic Secret Server";
+      text['body']  = "Thycotic Secret Server now includes Duo Security's two-factor authentication, complete with self-service enrollment and authentication prompt.";
+      text['link']  = "https://duo.com/docs/thycotic";
+      text['img']   = "img/thycotic_network_diagram.png";
+      return text;
+    case 'ldap':
+      text['title'] = "LDAP";
+      text['body']  = "Duo can be integrated with almost any device or system that supports using LDAP for authentication. In this type of configuration, users will receive an automatic push or phone callback during login. Users who need to use a passcode have the option to append it to their existing password when logging in.";
+      text['link']  = "https://duo.com/docs/ldap";
+      text['img']   = "img/ldap-network-diagram.png";
+      return text;
+    case 'radius':
+      text['title'] = "RADIUS";
+      text['body']  = "Duo integrates with almost any device or system that supports using RADIUS for authentication. In this type of configuration, users will append Duo passcodes — or factor names like phone or push — to their existing passwords when logging in.";
+      text['link']  = "https://duo.com/docs/radius";
+      text['img']   = "img/radius-network-diagram.png";
+      return text;
+    case 'duounix':
+      text['title'] = "Duo Unix - Two-Factor Authentication for SSH with PAM Support (pam_duo)";
+      text['body']  = "Duo can be easily added to any Unix system to protect remote (SSH) or local logins with the addition of a simple pam_duo PAM module. It has been tested on Linux (RedHat, Fedora, CentOS, Debian, Ubuntu, Amazon Linux), BSD (FreeBSD, NetBSD, OpenBSD), Solaris, HP-UX, and AIX. The code is open-source and available on GitHub.";
+      text['link']  = "https://duo.com/docs/duounix";
+      text['img']   = "img/unix_network_diagram.png";
+      return text;
 
-      // API Integrations
-      case 'duoweb':
-        text['title'] = "Duo Web";
-        text['body']  = "Duo Web makes it easy to add strong two-factor authentication to your web application. Client libraries are available for Python, Ruby, Classic ASP, ASP.NET, Java, PHP, Node.js, ColdFusion, and Perl.";
-        text['link']  = "https://duo.com/docs/duoweb";
-        text['img']   = "img/websdk_network_diagram.png";
-        return text;
-      case 'authapi':
-        text['title'] = "Duo Auth API";
-        text['body']  = "The Auth API is a low-level, RESTful API for adding strong two-factor authentication to your website or application. Check out the Two-Factor Authentication for SaaS Apps Solution Guide for an Auth API tutorial. Duo's Auth API is included in the Platform and Enterprise editions.";
-        text['link']  = "https://duo.com/docs/authapi";
-        text['img']   = "";
-        return text;
-      case 'adminapi':
-        text['title'] = "Duo Auth API";
-        text['body']  = "The Admin API provides programmatic access to the administrative functionality of Duo Security's two-factor authentication platform. Please contact us if you would like access to this API.";
-        text['link']  = "https://duo.com/docs/adminapi";
-        text['img']   = "";
-        return text;
+    // API Integrations
+    case 'duoweb':
+      text['title'] = "Duo Web";
+      text['body']  = "Duo Web makes it easy to add strong two-factor authentication to your web application. Client libraries are available for Python, Ruby, Classic ASP, ASP.NET, Java, PHP, Node.js, ColdFusion, and Perl.";
+      text['link']  = "https://duo.com/docs/duoweb";
+      text['img']   = "img/websdk_network_diagram.png";
+      return text;
+    case 'authapi':
+      text['title'] = "Duo Auth API";
+      text['body']  = "The Auth API is a low-level, RESTful API for adding strong two-factor authentication to your website or application. Check out the Two-Factor Authentication for SaaS Apps Solution Guide for an Auth API tutorial. Duo's Auth API is included in the Platform and Enterprise editions.";
+      text['link']  = "https://duo.com/docs/authapi";
+      text['img']   = "";
+      return text;
+    case 'adminapi':
+      text['title'] = "Duo Auth API";
+      text['body']  = "The Admin API provides programmatic access to the administrative functionality of Duo Security's two-factor authentication platform. Please contact us if you would like access to this API.";
+      text['link']  = "https://duo.com/docs/adminapi";
+      text['img']   = "";
+      return text;
 
-      // Reference Section
-      case 'authproxy_reference':
-        text['title'] = "Authentication Proxy - Reference";
-        text['body']  = "Many of Duo's integrations do not require any local components. However, certain integrations do require that a local Authentication Proxy service be installed. This document contains a comprehensive reference of the advanced configuration options available for the proxy.";
-        text['link']  = "https://duo.com/docs/authproxy_reference";
-        text['img']   = "";
-        return text;
-      case 'duo_help_desk_guide':
-        text['title'] = "Duo Help Desk Guide (PDF)";
-        text['body']  = "";
-        text['link']  = "https://duo.com/assets/pdf/Duo_Help_Desk_Guide.pdf";
-        text['img']   = "";
-        return text;
-      case 'guide_to_business_continuity_preparedness':
-        text['title'] = "Guide to Business Continuity Preparedness";
-        text['body']  = "";
-        text['link']  = "https://duo.com/assets/pdf/Duo_Guide_to_Business_Continuity_Preparedness.pdf";
-        text['img']   = "";
-        return text;
-      case 'checksums':
-        text['title'] = "Software Checksums";
-        text['body']  = "After downloading application-related software packages from Duo, we recommend verifying the checksum of the downloaded file to ensure its integrity and authenticity. The SHA-1 checksums listed here can be verified with sha1sum on many Unix-like systems, FCIV on Windows systems, or any utility capable of generating the SHA-1 hash of a file.";
-        text['link']  = "https://duo.com/docs/checksums";
-        text['img']   = "";
-        return text;
+    // Reference Section
+    case 'authproxy_reference':
+      text['title'] = "Authentication Proxy - Reference";
+      text['body']  = "Many of Duo's integrations do not require any local components. However, certain integrations do require that a local Authentication Proxy service be installed. This document contains a comprehensive reference of the advanced configuration options available for the proxy.";
+      text['link']  = "https://duo.com/docs/authproxy_reference";
+      text['img']   = "";
+      return text;
+    case 'duo_help_desk_guide':
+      text['title'] = "Duo Help Desk Guide (PDF)";
+      text['body']  = "";
+      text['link']  = "https://duo.com/assets/pdf/Duo_Help_Desk_Guide.pdf";
+      text['img']   = "";
+      return text;
+    case 'guide_to_business_continuity_preparedness':
+      text['title'] = "Guide to Business Continuity Preparedness";
+      text['body']  = "";
+      text['link']  = "https://duo.com/assets/pdf/Duo_Guide_to_Business_Continuity_Preparedness.pdf";
+      text['img']   = "";
+      return text;
+    case 'checksums':
+      text['title'] = "Software Checksums";
+      text['body']  = "After downloading application-related software packages from Duo, we recommend verifying the checksum of the downloaded file to ensure its integrity and authenticity. The SHA-1 checksums listed here can be verified with sha1sum on many Unix-like systems, FCIV on Windows systems, or any utility capable of generating the SHA-1 hash of a file.";
+      text['link']  = "https://duo.com/docs/checksums";
+      text['img']   = "";
+      return text;
 
-      // Default case to catch empty entries
-      default:
-        text['title'] = "";
-        text['body']  = "";
-        text['link']  = "";
-        text['img']   = "";
-        return text;
+    // Default case to catch empty entries
+    default:
+      text['title'] = "";
+      text['body']  = "";
+      text['link']  = "";
+      text['img']   = "";
+      return text;
 
 
  }
