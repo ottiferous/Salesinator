@@ -907,6 +907,7 @@ function docText(integration) {
       text['body']  = "Using Duo Push notifications with Duo Mobile is the fastest, safest, and easiest way to complete authentications. It also doesn't cost anything in telephony credits. Are you wondering how to educate and evangelize your user population on push? We've created a guide that does just that.";
       text['link']  = "https://duo.com/assets/pdf/Promoting_Push_Guide.pdf";
       text['img']   = "";
+      return text;
     case 'checksums':
       text['title'] = "Software Checksums";
       text['body']  = "After downloading application-related software packages from Duo, we recommend verifying the checksum of the downloaded file to ensure its integrity and authenticity. The SHA-1 checksums listed here can be verified with sha1sum on many Unix-like systems, FCIV on Windows systems, or any utility capable of generating the SHA-1 hash of a file.";
