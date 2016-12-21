@@ -3,8 +3,15 @@ document.addEventListener('DOMContentLoaded', function(evt) {
   document.getElementById("submit").addEventListener("click", getSalesinatorOptions);
   motd();
   evt.preventDefault();
+  document.getElementById("")
 
 });
+
+// event listener for the close button in overlay
+document.addEventListener('DOMContentLoaded', function(evt) {
+  document.getElementById("navclose").addEventListener("click", closeNav);
+  document.getElementById('foobar').style.height - "0%";
+})
 
 /*
 iterate through the 'select' elements within page.html and build new HTML to inject
@@ -32,7 +39,15 @@ function getSalesinatorOptions() {
   }
   //console.log("FINALHTML: " + finalHTML);
   document.getElementById('foobar').innerHTML += finalHTML;
+  document.getElementById('foobar').style.width = "100%";
   return false;
+}
+
+function openNAV() {
+  document.getElementById('foobar').style.height = "100%";
+}
+function closeNav() {
+  document.getElementById('foobar').style.height - "0%";
 }
 
 function motd() {
