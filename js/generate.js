@@ -2,6 +2,7 @@
 document.addEventListener('DOMContentLoaded', function(evt) {
   document.getElementById("submit").addEventListener("click", getSalesinatorOptions);
   motd();
+  buildHowTo();
   evt.preventDefault();
   document.getElementById("")
 
@@ -77,5 +78,14 @@ function motd() {
     "Life's true gift is the capacity to enjoy enjoyment."
   ];
   document.getElementById('motd').innerHTML += wordlist[Math.floor(Math.random()*wordlist.length)];
+  return false;
+}
+
+function buildHowTo() {
+  let text = "Select the information for the customer from the drop-down menus below, and then click on 'submit'. \
+  This will generate an email for you at the bottom of the page you can copy and paste into an email. \
+  Click 'clear' if you want to start over.";
+
+  document.getElementById('howto').innerHTML += text;
   return false;
 }
