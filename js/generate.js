@@ -1,8 +1,9 @@
-// event listener for the 'submit' button
+// event listener for the 'submit' button and some helper functions when DOM is loaded
 document.addEventListener('DOMContentLoaded', function(evt) {
   document.getElementById("submit").addEventListener("click", getSalesinatorOptions);
   motd();
   buildHowTo();
+  buildIntro(generateIntro());
   evt.preventDefault();
   document.getElementById("")
 
@@ -82,10 +83,47 @@ function motd() {
 }
 
 function buildHowTo() {
-  let text = "Select the information for the customer from the drop-down menus below, and then click on 'submit'. \
-  This will generate an email for you at the bottom of the page you can copy and paste into an email. \
+  let text = "Select the information for the customer from the drop-down menus below, and then click on 'submit'. </br> \
+  This will generate an overlay with the text you can copy and paste into an email. </br> \
   Click 'clear' if you want to start over.";
 
   document.getElementById('howto').innerHTML += text;
   return false;
+}
+
+/* helper function to format the <option> tag */
+function buildOptionHTML(key, value) {
+  return "<option value=\"" + key + "\">" + value + "</option>\n"
+}
+
+/* builds the Intro Section based on a passed Dictionary */
+function buildIntro(list) {
+
+  /* how many elements to create */
+  let maxCount = 3;
+  var finalHTML = "";
+
+  for ( x = 0; x < maxCount; x++ ) {
+    finalHTML += "<select id=\"Introduction" + x + "\">";
+    finalHTML += "<option label=\" \"></option>\n";
+    for (var key in list) {
+      if(list.hasOwnProperty(key)) {
+        /* pass along the id and the text to helper function */
+        finalHTML += buildOptionHTML(key, list[key]);
+      }
+    }
+    finalHTML += "</select>"
+  }
+  document.getElementById('introduction').innerHTML += finalHTML;
+  return false;
+}
+function generateIntro() {
+  return {
+    "guide" : "Guide",
+    "getting_started" : "Getting Started",
+    "administration" : "Administration",
+    "creating_applications" : "Creating Applications",
+    "enrolling_users" : "Enrolling Users",
+    "deploying_a_proof_of_concept" : "Deploying a Proof of Concept"
+  };
 }
