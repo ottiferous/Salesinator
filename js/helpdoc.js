@@ -240,7 +240,7 @@ function docText(integration) {
       text['title'] = "Palo Alto GlobalProtect";
       text['body']  = "Duo integrates with your Palo Alto GlobalProtect Gateway to add two-factor authentication to VPN logins. To integrate Duo with your Palo Alto, you will need to install a local proxy service on a machine within your network. Before proceeding, you should locate (or set up) a system on which you will install the Duo Authentication Proxy. The proxy supports Windows and Linux systems (in particular, we recommend Windows Server 2012 R2 or later, Red Hat Enterprise Linux 6 or later, CentOS 6 or later, or Debian 6 or later). This Duo proxy server also acts as a RADIUS server — there's no need to deploy a separate RADIUS server to use Duo.";
       text['link']  = "https://duo.com/docs/paloalto";
-      text['img']   = "palo_alto_network_diagram.png";
+      text['img']   = "img/palo_alto_network_diagram.png";
       return text;
     case 'f5bigip':
       text['title'] = "F5 BIG-IP APM";
