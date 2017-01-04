@@ -9,7 +9,6 @@
           are not part of Duo and want to use this, feel free to use it as a base
           for designing your own cool tool! This software is offered as-is.
   ToDo:
-          - dynamically build these lists through javascript
           - copy the text directly to the clipboard when button is clicked
 -->
 <html>
@@ -18,12 +17,15 @@
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <script style="display: none" src="/js/helpdoc.js"></script>
     <script style="display: none" src="/js/generate.js"></script>
+    <script style="display: none" src="/js/helper.js"></script>
   </head>
   <body>
     <header>
       <img src="logo.png">
       <h1>Salesinator</h1>
-      <div id="motd"></div>
+      <button id="submit" type="button">Submit</button>
+      <button id="clear">Clear</button>
+      <h2><div id="motd"></div></h2>
     </header>
     <div id="howto"></div>
     <form>
@@ -46,11 +48,7 @@
           <td>Reference<div id="reference"></div></td>
         </tr>
       </table>
-      </br></br></br>
-      <button id="submit" type="button">Submit</button>
-      <button id="clear">Clear</button>
   		<div id="foobar" class="overlay">
-  			<!-- this is where the overlay is generated -->
   			<button id="navclose" class="closebtn">Close</button>
   		</div>
     </form>
