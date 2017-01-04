@@ -101,10 +101,9 @@
 				padding: 15px;
 				text-align: center;
 			}
-			.motd {
+			#motd {
 				padding-right: 20%;
-				padding-left: 20%;
-				background-color: black;
+				padding-left: 7%;
 
 			}
 
