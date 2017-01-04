@@ -87,7 +87,7 @@ function motd() {
     "Oh hello there. I didn't see you. Probably from a lack of eyes.",
     "<insert funny quote here>",
     "Well I think you're stunning, brave, and beautiful.",
-    "Salesinator was recently updated. It now nows how to experience love!",
+    "Salesinator was recently updated. It now knows how to experience love!",
     "I saw a turtle!",
     "SELECT ALL THE THINGS!",
     "It sounds like English, but I can't understand a word you're saying.",
