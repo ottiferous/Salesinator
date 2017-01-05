@@ -121,15 +121,17 @@
 	    background-color: white;
 			user-select: all;					/* causes all text/images within the overlay to be selected */
 	    overflow-x: hidden; 			/* Disable horizontal scroll */
-	    transition: 0.5s; 				/* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+	    transition: 1s;
 			}
 
 			/* Position the content inside the overlay */
 			.overlay-content {
-			    position: relative;
+			    position: absolute;
 			    top: 25%; 						/* 25% from the top */
 			    width: 75%; 					/* doesn't seem to work? */
-			    margin-top: 130px; 		/* 30px top margin to avoid conflict with the close button on smaller screens */
+			    margin-top: 130px; 		/* 130px top margin to avoid conflict with the close button */
+					padding-right: 20%;
+					padding-left: 20%;
 			}
 
 			/* Position the close button (top right corner) */
@@ -141,14 +143,4 @@
 					color: black;
 					background: transparent;
 					user-select: none;
-			}
-
-			/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-			@media screen and (max-height: 450px) {
-			    .overlay a {font-size: 20px}
-			    .overlay .closebtn {
-			        font-size: 40px;
-			        top: 15px;
-			        right: 35px;
-			    }
 			}
