@@ -1,9 +1,8 @@
 function buildEmail(section) {
-  // build template for emails ( refactor into own function? )
   return buildHTML(docText(section));
 }
 
-// builds HTML formatting for text
+/* builds HTML formatting for text */
 function buildHTML(text) {
   var formattedString = "";
   formattedString += (text['title'] == "" ? "" : "</br><h1><em>" + text['title'] + "</em></h1>");
