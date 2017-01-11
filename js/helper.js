@@ -42,7 +42,8 @@ function generateIntro() {
     "administration" : "Administration",
     "creating_applications" : "Creating Applications",
     "enrolling_users" : "Enrolling Users",
-    "deploying_a_proof_of_concept" : "Deploying a Proof of Concept"
+    "deploying_a_proof_of_concept" : "Deploying a Proof of Concept",
+    "trial" : "Trial Landing Page"
   };
 }
 function generatePlatformFeatures() {

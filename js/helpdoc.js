@@ -61,6 +61,12 @@ function docText(integration) {
       text['link']  = "https://duo.com/docs/deploying_a_proof_of_concept";
       text['img']   = "";
       return text;
+    case 'trial':
+      text['title'] = "What You Get With Duo";
+      text['body'] = "Sign up for a free 30-day trial to get full access to the features of our Trusted Access suite and start securing your users in minutes.";
+      text['link'] = "https://duo.com/trial"
+      text['img'] = "";
+      return text;
 
     // Platform Features
     case 'platform_overview':
