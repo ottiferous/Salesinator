@@ -27,7 +27,14 @@ function motd() {
     "I saw a turtle!",
     "SELECT ALL THE THINGS!",
     "It sounds like English, but I can't understand a word you're saying.",
-    "Life's true gift is the capacity to enjoy enjoyment."
+    "Life's true gift is the capacity to enjoy enjoyment.",
+    "No man controls my destiny; especially not one who attacks down-wind and smells of garlic.",
+    "Train yourself to let go of everything you fear to lose",
+    "You're a Hufflepuff aren't you?",
+    "You seem like a Ravenclaw",
+    "Definitely Gryffindor",
+    "Slytherin? Really?",
+    "Leave Britney Alone!"
   ];
   document.getElementById('motd').innerHTML += wordlist[Math.floor(Math.random()*wordlist.length)];
   return false;
