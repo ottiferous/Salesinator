@@ -57,7 +57,7 @@ function generatePlatformFeatures() {
   return {
     "platform_overview" : "Platform Overview",
     "policy" : "Policy & Control",
-    "insights" : "Device Insight",
+    "insight" : "Device Insight",
     "endpoints" : "Endpoints",
     "dag" : "Duo Access Gateway"
   };
