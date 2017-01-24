@@ -952,6 +952,13 @@ function docText(integration) {
       text['link']  = "https://duo.com/docs/checksums";
       text['img']   = "";
       return text;
+    case 'dng':
+      text['title'] = "Duo Network Gateway";
+      text['body']  = "With Duo Network Gateway your users can securely access your internal web applications from any device, using any browser, from anywhere in the world, without having to install or configure remote access software on their device. Users first authenticate to Duo Network Gateway and approve a two-factor authentication request before they may access your application. Duo Network Gateway gives you granular access control per web application or user group. You can specify different policies per application to make sure only the right users and endpoints are able to access your internal applications.";
+      text['link']  = "https://duo.com/docs/dng";
+      text['img']   = "img/dng-onpremsaml-diagram.png";
+      return text;
+
 
     // Default case to catch empty entries
     default:

@@ -21,7 +21,7 @@ function motd() {
     "Anything is possible if you don't know what you're talking about.",
     "File that under 'Never'.",
     "Oh hello there. I didn't see you. Probably from a lack of eyes.",
-    "<insert funny quote here>",
+    "A funny quote should be here. Contact your administrator for a funny quote.",
     "Well I think you're stunning, brave, and beautiful.",
     "Salesinator was recently updated. It now knows how to experience love!",
     "I saw a turtle!",
@@ -34,7 +34,8 @@ function motd() {
     "You seem like a Ravenclaw",
     "Definitely Gryffindor",
     "Slytherin? Really?",
-    "Leave Britney Alone!"
+    "Leave Britney Alone!",
+    ""
   ];
   document.getElementById('motd').innerHTML += wordlist[Math.floor(Math.random()*wordlist.length)];
   return false;
@@ -216,8 +217,9 @@ function generateAPI() {
 }
 function generateReference() {
   return {
-    "authrpoxy" : "Authproxy",
+    "authproxy" : "Authproxy",
     "duo_help_desk_guide" : "Duo Help Desk Guide",
+    "dng" : "Duo Network Gateway",
     "guide_to_business_continuity_preparedness" : "Business Continuity Preparedness",
     "promoting_push" : "Promoting Push Guide",
     "checksums" : "Checksums"
