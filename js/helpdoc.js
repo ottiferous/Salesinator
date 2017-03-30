@@ -27,7 +27,7 @@ function docText(integration) {
     // Introduction to Duo
     case 'guide':
       text['title'] = "Guide to Two-Factor Authentication";
-      text['body']  = "";
+      text['body']  = "Two-factor authentication adds a second layer of security to your online accounts. Verifying your identity using a second factor (like your phone or other mobile device) prevents anyone but you from logging in, even if they know your password.";
       text['link']  = "https://guide.duo.com/";
       text['img']   = "";
       return text;
@@ -168,25 +168,25 @@ function docText(integration) {
     // Administration
     case 'administration-settings':
       text['title'] = "Administration - Using the Admin Panel and Changing Settings";
-      text['body']  = "Customize your Duo experience by changing global settings in the Duo Admin Panel. To access the Admin Panel, navigate to https://admin.duosecurity.com , enter your administrator account email address and password, and click Log In. After your login is accepted, you then must authenticate using a second factor. You must activate your administrator account for Duo Mobile separately from your user account to use Duo's push authentication See Managing Administrative Users for instructions.";
+      text['body']  = "Customize your Duo experience by changing global settings in the Duo Admin Panel. To access the Admin Panel, navigate to https://admin.duosecurity.com, enter your administrator account email address and password, and click Log In. After your login is accepted, you then must authenticate using a second factor. You must activate your administrator account for Duo Mobile separately from your user account to use Duo's push authentication. See Managing Administrative Users for instructions.";
       text['link']  = "https://duo.com/docs/administration-settings";
       text['img']   = "";
       return text;
     case 'administration-users':
       text['title'] = "Managing Users";
-      text['body']  = "Create, manage, and delete users from the the Duo Admin Panel. To access the Admin Panel, navigate to https://admin.duosecurity.com, enter your administrator account email address and password, and click Submit. After your login is accepted, you then must authenticate using a second factor. You must activate your administrator account for Duo Mobile separately from your user account to use Duo's push authentication See Managing Administrators for instructions.";
+      text['body']  = "Create, manage, and delete users from the the Duo Admin Panel. To access the Admin Panel, navigate to https://admin.duosecurity.com, enter your administrator account email address and password, and click Submit. After your login is accepted, you then must authenticate using a second factor. You must activate your administrator account for Duo Mobile separately from your user account to use Duo's push authentication. See Managing Administrators for instructions.";
       text['link']  = "https://duo.com/docs/administration-users";
       text['img']   = "";
       return text;
     case 'administration-devices':
       text['title'] = "Managing 2FA Devices";
-      text['body']  = "Manage phones, hardware tokens, and other two-factor authentication devices from the Duo Admin Panel. To access the Admin Panel, navigate to https://admin.duosecurity.com , enter your administrator account email address and password, and click Log In. After your login is accepted, you then authenticate using a second factor. You must activate your administrator account for Duo Mobile separately from your user account to use Duo's push authentication. See Managing Administrators for instructions.";
+      text['body']  = "Manage phones, hardware tokens, and other two-factor authentication devices from the Duo Admin Panel. To access the Admin Panel, navigate to https://admin.duosecurity.com, enter your administrator account email address and password, and click Log In. After your login is accepted, you then authenticate using a second factor. You must activate your administrator account for Duo Mobile separately from your user account to use Duo's push authentication. See Managing Administrators for instructions.";
       text['link']  = "https://duo.com/docs/administration-devices";
       text['img']   = "";
       return text;
     case 'telephony_credits':
       text['title'] = "Telephony Credits";
-      text['body']  = "Duo's main authentication methods — Duo Push and Duo Mobile-generated passcodes — are app-based and have no telephony cost, but require a smartphone or other mobile device. Duo also supports telephony-based authentication via phone calls and SMS messages. Each authentication call or SMS message is debited against your telephony credit balance (as per rate card). If you ever exhaust your telephony credit balance, your users will not be able to receive authentication phone calls or text messages. They will still be able to authenticate using non-telephony methods: Duo Push, Duo Mobile passcodes, and hardware tokens. Paid accounts are issued credits monthly, and may purchase extra telephony credits as needed. Free personal edition account holders can also purchase additional telephony credits.";
+      text['body']  = "Duo's main authentication methods, Duo Push and Duo Mobile-generated passcodes, are app-based and have no telephony cost, but require a smartphone or other mobile device. Duo also supports telephony-based authentication via phone calls and SMS messages. Each authentication call or SMS message is debited against your telephony credit balance (as per rate card). If you ever exhaust your telephony credit balance, your users will not be able to receive authentication phone calls or text messages. They will still be able to authenticate using non-telephony methods: Duo Push, Duo Mobile passcodes, and hardware tokens. Paid accounts are issued credits monthly, and may purchase extra telephony credits as needed. Free personal edition account holders can also purchase additional telephony credits.";
       text['link']  = "https://duo.com/docs/telephony_credits";
       text['img']   = "";
       return text;
@@ -198,7 +198,7 @@ function docText(integration) {
       return text;
     case 'labs-features':
       text['title'] = "Labs Features FAQ";
-      text['body']  = "Duo Security customers are familiar with seeing new capabilities added to their service every few weeks. Whether it’s a performance boost, added support for a third-party product, or an entirely new feature, customers may take advantage of these enhancements as soon as they ship. Read about some recent product updates on the blog. To get new capabilities in the hands of customers even earlier, Duo Security introduced Labs Features.";
+      text['body']  = "Duo Security customers are familiar with seeing new capabilities added to their service every few weeks. Whether it\'s a performance boost, added support for a third-party product, or an entirely new feature, customers may take advantage of these enhancements as soon as they ship. Read about some recent product updates on the blog. To get new capabilities in the hands of customers even earlier, Duo Security introduced Labs Features.";
       text['link']  = "https://duo.com/docs/labs-features";
       text['img']   = "";
       return text;
