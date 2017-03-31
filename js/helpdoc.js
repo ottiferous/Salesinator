@@ -27,7 +27,7 @@ function docText(integration) {
     // Introduction to Duo
     case 'guide':
       text['title'] = "Guide to Two-Factor Authentication";
-      text['body']  = "";
+      text['body']  = "Two-factor authentication adds a second layer of security to your online accounts. Verifying your identity using a second factor (like your phone or other mobile device) prevents anyone but you from logging in, even if they know your password.";
       text['link']  = "https://guide.duo.com/";
       text['img']   = "";
       return text;
@@ -67,93 +67,126 @@ function docText(integration) {
       text['link'] = "https://duo.com/trial"
       text['img'] = "";
       return text;
-
-    // Platform Features
-    case 'platform_overview':
-      text['title'] = "Duo Platform Overview";
-      text['body']  = "Regain control over how your applications and data are being accessed with Duo Platform! Duo Platform adds policy and control over which users, devices, and networks are permitted to access organization applications. It analyzes user behavior, location, and device parameters and gives you the power to set more precise authentication policies. This lets you better secure your users without inconveniencing them.";
-      text['link']  = "https://duo.com/docs/platform_overview";
-      text['img']   = "";
-      return text;
-    case 'policy':
-      text['title'] = "Policy & Control";
-      text['body']  = "Duo's Platform Edition lets you reduce risks by enforcing precise policies and controls. Enable your team to define and enforce rules on who can access what applications — under what conditions. Define access policies by user group and per application to increase security without compromising end-user experience.";
-      text['link']  = "https://duo.com/docs/policy";
-      text['img']   = "";
-      return text;
-    case 'insight':
-      text['title'] = "Device Insight";
-      text['body']  = "Decentralization of device management and the rise of BYOD (Bring Your Own Device) can leave administrators wondering how users are accessing resources. The Mobile Devices and Laptops & Desktops dashboards show which platforms, devices, and browsers connect to your Duo protected applications and services.";
-      text['link']  = "https://duo.com/docs/insight";
-      text['img']   = "";
-      return text;
-    case 'endpoints':
-      text['title'] = "Endpoints";
-      text['body']  = "Duo's Endpoints analysis shows at a glance the security status of operating systems, browsers, and plugins used when connecting to your Duo protected applications and services.";
-      text['link']  = "https://duo.com/docs/endpoints";
-      text['img']   = "";
-      return text;
-    case 'dag':
-      text['title'] = "Duo Access Gateway";
-      text['body']  = "Duo Access Gateway (DAG) adds two-factor authentication, complete with inline self-service enrollment and authentication prompt to popular cloud services like Salesforce and Google Apps using SAML 2.0 federation.";
-      text['link']  = "https://duo.com/docs/dag";
-      text['img']   = "img/dag-diagram.png";
-      return text;
-
-    // Enterprise Features
+      
+    // MFA Features
     case 'admin-roles':
       text['title'] = "Administrative Roles";
-      text['body']  = "Many organizations have a variety of IT or security roles assigned to different groups, such as limited administrative rights granted to Help Desk staff. Duo's Administrative Roles feature allows Enterprise and Platform edition customers to delegate management of users, applications, billing, and other types of administrative access.";
+      text['body']  = "Many organizations have a variety of IT or security roles assigned to different groups, such as limited administrative rights granted to Help Desk staff. Duo's Administrative Roles feature allows Duo Beyond, Duo Access, and Duo MFA plans customers to delegate management of users, applications, billing, and other types of administrative access.";
       text['link']  = "https://duo.com/docs/admin-roles";
       text['img']   = "";
       return text;
     case 'self-service-portal':
       text['title'] = "Enabling Duo's Self-Service Portal";
-      text['body']  = "Empower your users with the ability to manage their authentication devices by enabling Duo's self-service portal for your applications.";
+      text['body']  = "Empower your users with the ability to manage their authentication devices by enabling Duo's self-service portal for your applications. Duo's self-service portal saves time for both administrators and end users by eliminating the need to contact IT staff for authentication device changes. Your users can add, edit, and remove authentication factors from the already familiar Duo authentication prompt page.";
       text['link']  = "https://duo.com/docs/self-service-portal";
       text['img']   = "";
       return text;
     case 'syncing_users_from_active_directory':
       text['title'] = "Synchronizing Users from Active Directory";
-      text['body']  = "Duo Security supports organizations that prefer to synchronize users and groups from Active Directory (AD). This is done by configuring Duo Security's Directory Sync feature. Active Directory attributes that may already be populated include name, email address, phone numbers, and group memberships. The Directory Sync feature is part of the Duo Enterprise and Platform Editions. ";
+      text['body']  = "Duo Security supports organizations that prefer to synchronize users and groups from Active Directory (AD). This is done by configuring Duo Security's Directory Sync feature. Active Directory attributes that may already be populated include name, email address, phone numbers, and group memberships. The Directory Sync feature is part of Duo Beyond, Duo Access, and Duo MFA plans.";
       text['link']  = "https://duo.com/docs/syncing_users_from_active_directory";
       text['img']   = "img/adsync-network-diagram.png";
       return text;
     case 'trusted_devices':
       text['title'] = "Using Trusted Devices & Trusted Networks Controls";
-      text['body']  = "Admins can make Duo's authentication protection even easier for users while maintaining good security practices throughout their organization with the Trusted Devices and Trusted Networks features.";
+      text['body']  = "Admins can make Duo's authentication protection even easier for users while maintaining good security practices throughout their organization with the Remembered Devices and Trusted Networks features.";
       text['link']  = "https://duo.com/docs/trusted_devices";
       text['img']   = "";
       return text;
     case 'device-management':
       text['title'] = "Device Management Portal";
-      text['body']  = "The Duo Device Management Portal is a standalone version of our self-service portal available to Enterprise and Platform edition customers. Instead of presenting device management options alongside the Duo login prompt for a protected service, this application puts your users directly into the device management interface and can be deployed independently from any other service requiring Duo two-factor authentication for access.";
+      text['body']  = "The Duo Device Management Portal is a standalone version of our self-service portal available to Duo Beyond, Duo Access, and Duo MFA plans customers. Instead of presenting device management options alongside the Duo login prompt for a protected service, this application puts your users directly into the device management interface and can be deployed independently from any other service requiring Duo two-factor authentication for access.";
       text['link']  = "https://duo.com/docs/device-management";
       text['img']   = "img/deviceportal_network_diagram.png";
       return text;
 
+    // Access Features
+    case 'access_overview':
+      text['title'] = "Duo Access Overview";
+      text['body']  = "Regain control over how your applications and data are being accessed with Duo! Duo Access adds policy and control over which users, devices, and networks are permitted to access organization applications. It analyzes user behavior, location, and device parameters and gives you the power to set more precise authentication policies. This lets you better secure your users without inconveniencing them.";
+      text['link']  = "https://duo.com/docs/platform_overview";
+      text['img']   = "";
+      return text;
+    case 'policy':
+      text['title'] = "Policy & Control";
+      text['body']  = "Duo Access helps you to reduce risk by enforcing precise policies and controls. Enable your team to define and enforce rules on who can access what applications — under what conditions. Define access policies by user group and per application to increase security without compromising end-user experience.";
+      text['link']  = "https://duo.com/docs/policy";
+      text['img']   = "";
+      return text;
+    case 'insight':
+      text['title'] = "Device Insight";
+      text['body']  = "Decentralization of device management and the rise of BYOD (Bring Your Own Device) can leave administrators wondering how users are accessing resources. The Device Insight dashboards show which OS platforms, devices, and browsers connect to your Duo protected applications and services. See at a glance who many systems have out of date or vulnerable software.";
+      text['link']  = "https://duo.com/docs/insight";
+      text['img']   = "";
+      return text;
+    case 'endpoints':
+      text['title'] = "Endpoints";
+      text['body']  = "Review operating system, browser, and third-party plugin version information for end user devices accessing Duo. Enable self-remediation to notify users to update browsers and plugins. Prevent access to your protected applications from clients with outdated software. All without installing additional agents or monitors.";
+      text['link']  = "https://duo.com/docs/endpoints";
+      text['img']   = "";
+      return text;
+    case 'phishing':
+      text['title'] = "Phishing";
+      text['body']  = "Deploy an internal phishing campaign in minutes. We've integrated Duo Insight, our free phishing assessment tool — directly into the Duo Admin Panel so you can send simulated email messages to selected enrolled users and monitor the status of your campaigns.";
+      text['link']  = "https://duo.com/docs/phishing";
+      text['img']   = "";
+      return text;
+    case 'dag':
+      text['title'] = "Duo Access Gateway";
+      text['body']  = "Duo Access Gateway (DAG) adds two-factor authentication, complete with inline self-service enrollment and authentication prompt, to popular cloud services like Salesforce and Google Apps using SAML 2.0 federation.";
+      text['link']  = "https://duo.com/docs/dag";
+      text['img']   = "img/dag-diagram.png";
+      return text;
+      
+      
+    // Beyond Features
+    case 'beyond_overview':
+      text['title'] = "Duo Beyond Overview";
+      text['body']  = "Duo Beyond allows you to identify corporate vs. personal devices with easy certificate deployment, block untrusted endpoints, and give your users secure access to internal applications without using VPNs.";
+      text['link']  = "https://duo.com/docs/beyond-overview";
+      text['img']   = "";
+      return text;
+    case 'trusted_endpoints':
+      text['title'] = "Trusted Endpoints";
+      text['body']  = "Duo Beyond helps you to reduce risk by enforcing precise policies and controls. Enable your team to define and enforce rules on who can access what applications — under what conditions. Define access policies by user group and per application to increase security without compromising end-user experience. Learn more about Policy & Control. Know at a glance how many managed and unmanaged devices accessed your applications on the Device Insight page, and see the trusted status of any Endpoint.";
+      text['link']  = "https://duo.com/docs/trusted-endpoints";
+      text['img']   = "";
+      return text;
+    case 'duo_network_gateway':
+      text['title'] = "Duo Network Gateway";
+      text['body']  = "With Duo Network Gateway your organization can provide external access to your internal web applications without the need for a traditional VPN, complete with Duo two-factor authentication and trusted access policies.";
+      text['link']  = "https://duo.com/docs/dng";
+      text['img']   = "";
+      return text;
+    case 'how_to_experience_duo_beyond':
+      text['title'] = "How to Experience Duo Beyond";
+      text['body']  = "If you're an existing customer who hasn't seen Duo Beyond, you're welcome to try it free for 30 days. Upgrade to Duo Beyond by choosing it on the Billing page of your account.";
+      text['link']  = "";
+      text['img']   = "";
+      return text;
+      
     // Administration
     case 'administration-settings':
       text['title'] = "Administration - Using the Admin Panel and Changing Settings";
-      text['body']  = "Customize your Duo experience by changing global settings in the Duo Admin Panel. To access the Admin Panel, navigate to https://admin.duosecurity.com , enter your administrator account email address and password, and click Log In. After your login is accepted, you then must authenticate using a second factor. You must activate your administrator account for Duo Mobile separately from your user account to use Duo's push authentication See Managing Administrative Users for instructions.";
+      text['body']  = "Customize your Duo experience by changing global settings in the Duo Admin Panel. To access the Admin Panel, navigate to https://admin.duosecurity.com, enter your administrator account email address and password, and click Log In. After your login is accepted, you then must authenticate using a second factor. You must activate your administrator account for Duo Mobile separately from your user account to use Duo's push authentication. See Managing Administrative Users for instructions.";
       text['link']  = "https://duo.com/docs/administration-settings";
       text['img']   = "";
       return text;
     case 'administration-users':
       text['title'] = "Managing Users";
-      text['body']  = "Create, manage, and delete users from the the Duo Admin Panel. To access the Admin Panel, navigate to https://admin.duosecurity.com, enter your administrator account email address and password, and click Submit. After your login is accepted, you then must authenticate using a second factor. You must activate your administrator account for Duo Mobile separately from your user account to use Duo's push authentication See Managing Administrators for instructions.";
+      text['body']  = "Create, manage, and delete users from the the Duo Admin Panel. To access the Admin Panel, navigate to https://admin.duosecurity.com, enter your administrator account email address and password, and click Submit. After your login is accepted, you then must authenticate using a second factor. You must activate your administrator account for Duo Mobile separately from your user account to use Duo's push authentication. See Managing Administrators for instructions.";
       text['link']  = "https://duo.com/docs/administration-users";
       text['img']   = "";
       return text;
     case 'administration-devices':
       text['title'] = "Managing 2FA Devices";
-      text['body']  = "Manage phones, hardware tokens, and other two-factor authentication devices from the Duo Admin Panel. To access the Admin Panel, navigate to https://admin.duosecurity.com , enter your administrator account email address and password, and click Log In. After your login is accepted, you then authenticate using a second factor. You must activate your administrator account for Duo Mobile separately from your user account to use Duo's push authentication. See Managing Administrators for instructions.";
+      text['body']  = "Manage phones, hardware tokens, and other two-factor authentication devices from the Duo Admin Panel. To access the Admin Panel, navigate to https://admin.duosecurity.com, enter your administrator account email address and password, and click Log In. After your login is accepted, you then authenticate using a second factor. You must activate your administrator account for Duo Mobile separately from your user account to use Duo's push authentication. See Managing Administrators for instructions.";
       text['link']  = "https://duo.com/docs/administration-devices";
       text['img']   = "";
       return text;
     case 'telephony_credits':
       text['title'] = "Telephony Credits";
-      text['body']  = "Duo's main authentication methods — Duo Push and Duo Mobile-generated passcodes — are app-based and have no telephony cost, but require a smartphone or other mobile device. Duo also supports telephony-based authentication via phone calls and SMS messages. Each authentication call or SMS message is debited against your telephony credit balance (as per rate card). If you ever exhaust your telephony credit balance, your users will not be able to receive authentication phone calls or text messages. They will still be able to authenticate using non-telephony methods: Duo Push, Duo Mobile passcodes, and hardware tokens. Paid accounts are issued credits monthly, and may purchase extra telephony credits as needed. Free personal edition account holders can also purchase additional telephony credits.";
+      text['body']  = "Duo's main authentication methods, Duo Push and Duo Mobile-generated passcodes, are app-based and have no telephony cost, but require a smartphone or other mobile device. Duo also supports telephony-based authentication via phone calls and SMS messages. Each authentication call or SMS message is debited against your telephony credit balance (as per rate card). If you ever exhaust your telephony credit balance, your users will not be able to receive authentication phone calls or text messages. They will still be able to authenticate using non-telephony methods: Duo Push, Duo Mobile passcodes, and hardware tokens. Paid accounts are issued credits monthly, and may purchase extra telephony credits as needed. Free personal edition account holders can also purchase additional telephony credits.";
       text['link']  = "https://duo.com/docs/telephony_credits";
       text['img']   = "";
       return text;
@@ -165,7 +198,7 @@ function docText(integration) {
       return text;
     case 'labs-features':
       text['title'] = "Labs Features FAQ";
-      text['body']  = "Duo Security customers are familiar with seeing new capabilities added to their service every few weeks. Whether it’s a performance boost, added support for a third-party product, or an entirely new feature, customers may take advantage of these enhancements as soon as they ship. Read about some recent product updates on the blog. To get new capabilities in the hands of customers even earlier, Duo Security introduced Labs Features.";
+      text['body']  = "Duo Security customers are familiar with seeing new capabilities added to their service every few weeks. Whether it\'s a performance boost, added support for a third-party product, or an entirely new feature, customers may take advantage of these enhancements as soon as they ship. Read about some recent product updates on the blog. To get new capabilities in the hands of customers even earlier, Duo Security introduced Labs Features.";
       text['link']  = "https://duo.com/docs/labs-features";
       text['img']   = "";
       return text;
