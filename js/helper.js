@@ -51,7 +51,8 @@ function generateIntro() {
     "creating_applications" : "Creating Applications",
     "enrolling_users" : "Enrolling Users",
     "deploying_a_proof_of_concept" : "Deploying a Proof of Concept",
-    "trial" : "Trial Landing Page"
+    "trial" : "Trial Landing Page",
+    "support" : "Support"
   };
 }
 function generatePlatformFeatures() {
