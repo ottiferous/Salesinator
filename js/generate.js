@@ -42,13 +42,18 @@ document.addEventListener('DOMContentLoaded', function(evt) {
 function getSalesinatorOptions() {
   optionsList =  document.getElementsByTagName("select");
   finalHTML = "";
+  render_images = false;
+  if(document.getElementById("pics").checked)
+    { render_images = true;
+      console.log(render_images);
+    }
 
   for (i = 0; i < optionsList.length; i++) {
     try {
       // if the option is found add it to the HTML list
       if (optionsList[i] != null) {
         key = optionsList[i].value;
-        finalHTML = finalHTML + (key == null ? "" : buildEmail(key));
+        finalHTML = finalHTML + (key == null ? "" : buildEmail(key, render_images));
       } else { console.log("Null Entry"); }
     } catch(e){
       if(e){ console.log(e); }

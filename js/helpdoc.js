@@ -1,15 +1,18 @@
-function buildEmail(section) {
-  return buildHTML(docText(section));
+function buildEmail(section, render_images=false) {
+  return buildHTML(docText(section), render_images);
 }
 
 /* builds HTML formatting for text */
-function buildHTML(text) {
+function buildHTML(text, render_images=false) {
   var formattedString = "";
   formattedString += (text['title'] == "" ? "" : "</br><h1><em>" + text['title'] + "</em></h1>");
   formattedString += (text['body'] == "" ? "" : text['body'] + "</br></br>");
   formattedString += (text['link'] == "" ? "" : "More Information: <a href='" + text['link'] + "'>" + text['link'] + "</a></br>");
-  formattedString += (text['img'] == "" ? "" : "<img src='" + chrome.extension.getURL(text['img']) + "'></br>")
 
+  if (render_images)
+  {
+    formattedString += (text['img'] == "" ? "" : "<img src='" + chrome.extension.getURL(text['img']) + "'></br>");
+  }
   return formattedString;
 }
 
@@ -64,7 +67,7 @@ function docText(integration) {
     case 'trial':
       text['title'] = "What You Get With Duo";
       text['body'] = "Sign up for a free 30-day trial to get full access to the features of our Trusted Access suite and start securing your users in minutes.";
-      text['link'] = "https://duo.com/trial"
+      text['link'] = "https://duo.com/trial";
       text['img'] = "";
       return text;
     case 'support':
