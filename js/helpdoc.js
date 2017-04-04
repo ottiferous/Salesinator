@@ -67,6 +67,12 @@ function docText(integration) {
       text['link'] = "https://duo.com/trial"
       text['img'] = "";
       return text;
+    case 'Support':
+      text['title'] = "Support"
+      text['body'] = "Duo is committed to providing you with the best possible experience. From using our product to interacting with our team, we want to be sure you have what you need to keep your accounts and data safe. Visit our support page for support contact information, detailed documentation, our Duo knowledge base, current system status, and other great resources.
+      text['link'] = "https://duo.com/support"
+      text['img'] = "";
+      return text;
       
     // MFA Features
     case 'admin-roles':
