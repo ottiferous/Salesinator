@@ -3,7 +3,7 @@
   helper functions when DOM is loaded
 */
 document.addEventListener('DOMContentLoaded', function(evt) {
-  document.getElementById("submit").addEventListener("click", getSalesinatorOptions);
+  document.getElementById('submit').addEventListener('click', getSalesinatorOptions);
   motd();
 
   /* dynamically geneate the drop down menus */
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function(evt) {
   event listener for the checkbox to hide/show images in overlay
 */
 document.addEventListener('DOMContentLoaded', function(evt) {
-  document.getElementById('pics').addEventListener('change', showPics);
+  document.getElementById('pics').addEventListener('change', flagPics);
 })
 
 /*
@@ -47,13 +47,12 @@ document.addEventListener('DOMContentLoaded', function(evt) {
   building new HTML to inject
 */
 function getSalesinatorOptions() {
-  optionsList =  document.getElementsByTagName("select");
+  optionsList =  document.getElementsByTagName('select');
   finalHTML = "";
   render_images = false;
-  if(document.getElementById("pics").checked)
-    { render_images = true;
-      console.log(render_images);
-    }
+  if(document.getElementById("pics").checked) {
+    render_images = true;
+  }
 
   for (i = 0; i < optionsList.length; i++) {
     try {
@@ -72,18 +71,25 @@ function getSalesinatorOptions() {
   return false;
 }
 
+/* helper functions for opening and closing the nav-bar */
 function openNAV() {
   document.getElementById('foobar').style.height = "100%";
 }
+
 function closeNav() {
   document.getElementById('foobar').style.height - "0%";
 }
 
 /* grab state of checkbox and store last value locally */
-function showPics() {
-  if(document.getElementById('pics').checked)
-    Chrome.storage.sync.set("pics" : true)
+function flagPics() {
+  if (document.getElementById('pics').checked == true) {
+    chrome.storage.sync.set({"pics" : true});
+  } else {
+    chrome.storage.sync.set({"pics" : false});
+
+  }
 }
+
 /* helper function to format the <option> tag */
 function buildOptionHTML(key, value) {
   return "<option value=\"" + key + "\">" + value + "</option>\n"
