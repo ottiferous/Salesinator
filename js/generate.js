@@ -31,8 +31,15 @@ document.addEventListener('DOMContentLoaded', function(evt) {
   event listener for the close button in overlay
 */
 document.addEventListener('DOMContentLoaded', function(evt) {
-  document.getElementById("navclose").addEventListener("click", closeNav);
+  document.getElementById('navclose').addEventListener('click', closeNav);
   document.getElementById('foobar').style.height - "0%";
+})
+
+/*
+  event listener for the checkbox to hide/show images in overlay
+*/
+document.addEventListener('DOMContentLoaded', function(evt) {
+  document.getElementById('pics').addEventListener('change', showPics);
 })
 
 /*
@@ -72,6 +79,11 @@ function closeNav() {
   document.getElementById('foobar').style.height - "0%";
 }
 
+/* grab state of checkbox and store last value locally */
+function showPics() {
+  if(document.getElementById('pics').checked)
+    Chrome.storage.sync.set("pics" : true)
+}
 /* helper function to format the <option> tag */
 function buildOptionHTML(key, value) {
   return "<option value=\"" + key + "\">" + value + "</option>\n"
