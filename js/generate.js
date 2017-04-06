@@ -40,6 +40,9 @@ document.addEventListener('DOMContentLoaded', function(evt) {
 */
 document.addEventListener('DOMContentLoaded', function(evt) {
   document.getElementById('pics').addEventListener('change', flagPics);
+  if(chrome.storage.sync.get("pics", function(e) {console.log(e);}) == true) {
+    document.getElementById("pics").checked = true;
+  } else { document.getElementById("pics").checked = false; }
 })
 
 /*
@@ -83,9 +86,9 @@ function closeNav() {
 /* grab state of checkbox and store last value locally */
 function flagPics() {
   if (document.getElementById('pics').checked == true) {
-    chrome.storage.sync.set({"pics" : true});
+    chrome.storage.sync.set({"pics" : true}, function(obj) {console.log("Show pics is true")});
   } else {
-    chrome.storage.sync.set({"pics" : false});
+    chrome.storage.sync.set({"pics" : false}, function(obj) {console.log("Show pics is false")});
 
   }
 }
