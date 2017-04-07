@@ -122,6 +122,8 @@
 			user-select: all;					/* causes all text/images within the overlay to be selected */
 	    overflow-x: hidden; 			/* Disable horizontal scroll */
 	    transition: 1s;
+			margin-left: 50px;        /* Indents text to the right for easy reading and shows the awesome logo */
+			font-size: small;					/* Increase font size a bit, to help avoid squints */
 			}
 
 			/* Position the content inside the overlay */
